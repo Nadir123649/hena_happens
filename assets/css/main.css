@@ -1,0 +1,20 @@
+.font-1 {
+    font-family: 'Cinzel', serif;
+  }
+  .font-2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-3 {
+    font-family: 'Cormorant', serif;
+  }
+  .font-4 {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .bottom-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #CDCDCD;
+  }

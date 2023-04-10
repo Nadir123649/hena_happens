@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hena Happens</title>
+    <!-- Link to Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+    <header class="container bottom-line mx-auto px-1 py-0 h-30 bg-white ">
+        <nav class="relative  py-7">
+            <div class="container mx-auto flex justify-between items-center px-16">
+
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#"
+                            class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500 ">about</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">portfolio</a>
+                    </li>
+                </ul>
+
+                <a href="" class="font-1  not-italic font-normal  text-3xl leading-8 text-gray-800 capitalize">
+                    Henna Happens
+                </a>
+
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#"
+                            class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">services</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">location</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">FAQ</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile menu icon -->
+                <button id="mobile-icon" class="md:hidden">
+                    <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <!-- <div class="md:hidden flex justify-center mt-3 w-full">
+                <div id="mobile-menu" class="mobile-menu absolute top-23 w-full"> 
+                    <ul class="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
+                        <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a
+                                href="https://google.com" class="block pl-7">Home</a></li>
+                        <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
+                                class="block pl-7">News</a></li>
+                        <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
+                                class="block pl-7">About</a></li>
+                        <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
+                                class="block pl-7">Contact</a></li>
+                        <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
+                                class="block pl-7">Contact</a></li>
+                    </ul>
+                </div>
+            </div> -->
+        </nav>
+    </header>
+    <!-- banner section -->
+    <div class="container mx-auto px-5 py-10">
+        <div class="flex flex-wrap-reverse justify-center items-center md:-mx-5">
+          <div class="w-full md:w-1/2 md:px-5">
+            <p class="font-2 not-italic font-normal text-base md:text-lg leading-5 text-gray-800 pb-5">
+              All of our body art services are completely freehand, temporary, & fun
+            </p>
+            <h1 class="font-1 not-italic font-normal uppercase text-8xl text-gray-800 pb-10">
+              Discover beauty <i class="font-3 lowercase">with</i> henna
+            </h1>
+      
+            <a class="font-2 bg-black font-normal text-base text-white py-4 px-20 md: inline-block" href="#">Book Now</a>
+          </div>
+          <div class="w-full md:w-1/2 md:mt-6">
+            <img src="./assets/images/main-img.png" alt="Banner Image" class="mx-auto block">
+            <p class="font-2 not-italic font-normal text-base md:text-lg leading-5 text-gray-800 my-6">
+              All of our body art services are completely freehand, temporary, & fun for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
