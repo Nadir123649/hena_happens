@@ -235,10 +235,10 @@
   margin-bottom: 10px;
 }
 .col-one {
-  width: 45%;
+  width: 50%;
 }
 .col-two {
-  width: 25%;
+  width: 30%;
 }
 .col-three {
   width: 20%;
@@ -257,7 +257,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 120px;
 }
 
 .arrow {
@@ -277,13 +276,20 @@
   display: none;
   width: 100%;
   transition: max-height 0.5s ease-in-out;
-  padding-right: 150px;
   padding-left: 10px;
 }
 .accordion-item .accordion-content {
   transition: max-height 0.5s ease-in-out;
 }
-
+#accordion::before{
+  content: "";
+  position: absolute;
+  height: 1px; 
+  background: #CDCDCD;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 .border-black {
   border: 1px solid black;
 }
