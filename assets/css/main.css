@@ -70,6 +70,69 @@
   content: '\e900';
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?5jf33z');
+  src:  url('fonts/icomoon.eot?5jf33z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?5jf33z') format('truetype'),
+    url('fonts/icomoon.woff?5jf33z') format('woff'),
+    url('fonts/icomoon.svg?5jf33z#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right-small-arrow:before {
+  content: "\e900";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?r8bxeo');
+  src:  url('fonts/icomoon.eot?r8bxeo#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?r8bxeo') format('truetype'),
+    url('fonts/icomoon.woff?r8bxeo') format('woff'),
+    url('fonts/icomoon.svg?r8bxeo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left-arrow-small:before {
+  content: "\e900";
+  color: #cdcdcd;
+}
+
 /* container */
 
 .min-container {
@@ -103,6 +166,9 @@
 .inner-p {
   padding-right: 107px;
 }
+.p-left {
+  padding-left: 296px;
+}
 .circle-after {
   position: relative;
 }
@@ -112,7 +178,7 @@
   width: 15px;
   height: 15px;
   border: 1px solid #383533;
-  top: 30%;
+  top: 32%;
   border-radius: 50%;
   left: 0;
 }
@@ -183,11 +249,6 @@
   left: 10px;
   top: 85%;
 }
-/* .fa-chevron-right{
-  font-size: 30px;
-  color: green;
-  text-align: center;
-} */
 .slick-next {
   left: 130px;
   top: 85%;
@@ -246,6 +307,11 @@
 .grey-color {
   color: rgba(65, 60, 59, 0.3);
 }
+.img-boxe{
+  width: 700px;
+  height: 800px;
+  margin: 0px 0px 0px auto;
+}
 .accord-head {
   font-size: 40px !important;
 }
@@ -257,6 +323,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 121px;
 }
 
 .arrow {
@@ -272,7 +339,7 @@
 }
 
 .accordion-content {
-  padding: 15px 15px 15px 0px;
+  padding: 15px 125px 15px 0px;
   display: none;
   width: 100%;
   transition: max-height 0.5s ease-in-out;
@@ -323,9 +390,9 @@
 .small {
   width: 675px !important;
 }
-.right {
+/* .right {
   padding-right: 60px;
-}
+} */
 .animate-slide-left {
   animation: slide-left 1s ease-in-out forwards;
 }
@@ -356,3 +423,70 @@
   }
 }
 
+
+
+
+.slick-carousel button .slick-prev{
+  position: absolute;
+  z-index: 1;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  border: 1px solid #383533;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  cursor: pointer;
+}
+.slick-carousel button  .slick-next{
+  position: absolute;
+  z-index: 1;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  border: 1px solid #383533;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  cursor: pointer;
+} 
+
+.slick-carousel .slick-prev {
+  left: 300px;
+  top: 156%;
+}
+
+.slick-carousel .slick-next {
+  left: 435px;
+  top: 156%;
+}
+.slick-next i{
+ text-align: center;
+  font-size: 40px;
+}
+.slick-prev i{
+  font-size: 40px;
+  text-align: center;
+}
+.slick-prev:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  visibility: hidden !important;
+}
+.slick-next:before{
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  visibility: hidden !important;
+}
