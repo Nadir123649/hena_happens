@@ -2,1135 +2,1013 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hena Happens</title>
-  <!-- Link to Tailwind CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="./tailwind.config.js">
-  <link rel="stylesheet" href="./assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hena Happens</title>
+    <!-- Link to Tailwind CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./tailwind.config.js">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
 
 <body>
-  <div class="wrapper-div">
-    <header class=" bottom-line mx-auto  py-0 h-30  fixed top-0 w-full bg-white z-50 ">
-      <nav class="relative  py-8">
-        <div class="container mx-auto flex justify-between items-center px-2 ">
+    <div class="wrapper-div">
 
-          <ul class="hidden md:flex space-x-8">
-            <li><a href="#"
-                class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500 ">about</a>
-            </li>
-            <li><a href="#"
-                class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">portfolio</a>
-            </li>
-          </ul>
+        <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
+            <nav class="flex justify-between items-center container mx-auto relative py-8">
+                <!-- Left menu -->
+                <ul class="flex items-center md:flex space-x-8">
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./portfolio.html">portfolio</a>
+                    </li>
+                </ul>
 
-          <a href="" class="font-1  not-italic font-normal  text-3xl leading-8 text-gray-800 capitalize">
-            Henna Happens
-          </a>
+                <!-- Logo -->
+                <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
+                <!-- Right menu -->
 
-          <ul class="hidden md:flex space-x-8">
-            <li><a href="#"
-                class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">services</a>
-            </li>
-            <li><a href="#"
-                class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">location</a>
-            </li>
-            <li><a href="#"
-                class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500">FAQ</a>
-            </li>
-          </ul>
+                <ul class="flex items-center  md:flex space-x-8">
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">services</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">location</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">FAQ</a>
+                    </li>
+                </ul>
 
-          <!-- Mobile menu icon -->
-          <button id="mobile-icon" class="md:hidden">
-            <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-        <!-- Mobile menu -->
-        <!-- <div class="md:hidden flex justify-center mt-3 w-full">
-          <div id="mobile-menu" class="mobile-menu absolute top-23 w-full">
-            <ul class="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
-              <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="https://google.com"
-                  class="block pl-7">Home</a></li>
-              <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
-                  class="block pl-7">News</a></li>
-              <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
-                  class="block pl-7">About</a></li>
-              <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
-                  class="block pl-7">Contact</a></li>
-              <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a href="#"
-                  class="block pl-7">Contact</a></li>
-            </ul>
-          </div>
-        </div> -->
-      </nav>
-    </header>
+            </nav>
+        </header>
+        <!-- banner section -->
+        <div class="banner-section">
+            <div class="container mx-auto px-4  sm:px-6 pt-28 lg:w-full ">
+                <div class="lg:flex flex-wrap justify-center items-center md:-mx-5">
+                    <div class="w-full md:w-3/5 relative -mr-32 m-auto z-10 md:px-2 ">
+                        <p class="font-2 not-italic pr-12 md:pr-80 font-normal text-base md:text-lg leading-5 text-gray-800 pb-5">
+                            All of our body art services are completely freehand, temporary, &amp; fun
+                        </p>
+                        <h1 class="main-heading font-1 not-italic font-normal uppercase text-5xl md:text-7xl text-gray-800 pb-10">
+                            Discover beau<span class="text-white">ty</span> <i class="lowercase text-7xl font-5-italic">with</i> henna
+                        </h1>
 
-    <!-- banner section -->
-    <div>
-      <div class="container mx-auto px-4 sm:px-6 pt-28 ">
-        <div class="flex flex-wrap justify-center items-center md:-mx-5">
-          <div class="w-full md:w-3/5 relative -mr-32 m-auto z-10 md:px-2 ">
-            <p class="font-2 not-italic pr-80 font-normal text-base  md:text-lg  leading-5 text-gray-800 pb-5">
-              All of our body art services are completely freehand, temporary, &amp; fun
-            </p>
-            <h1 class="main-heading font-1 not-italic font-normal uppercase text-7xl md:text-7xl text-gray-800 pb-10">
-              Discover beau<span class="text-white" >ty</span> <i class="font-3 lowercase">with</i> henna
-            </h1>
-    
-            <a class="font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out"
-              href="#">Book Now</a>
-          </div>
-          <div class="w-full md:w-1/2 md:mt-6">
-            <div class="banner-img w-full h-auto">
-              <img src="./assets/images/main-img.png" alt="Banner Image" class="mx-auto h-2/3 block  w-full">
+                        <a class="font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-10 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
+                    </div>
+                    <div class="w-full md:w-1/2 md:mt-6">
+                        <div class="banner-img w-full h-auto">
+                            <img src="./assets/images/main-img.png" alt="Banner Image" class="mx-auto h-2/3 block w-full">
+                        </div>
+                        <div class="banner-description">
+                            <p class="font-2 not-italic font-normal pr-6 md:pr-44 text-base md:text-lg leading-5 text-gray-800 my-6">
+                                All of our body art services are completely freehand, temporary, &amp; fun for everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="font-2 not-italic font-normal pr-44 text-base md:text-lg leading-5 text-gray-800 my-6 ">
-              All of our body art services are completely freehand, temporary, &amp; fun for everyone.
-            </p>
-          </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- portfolio -->
-    <main>
 
-      <section>
-        <div class="container mx-auto px-4 pt-28">
-          <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-0">Portfolio</h1>
-          <div class="  flex flex-row gap-1 pt-10">
-            <div class="w-1/2 md:w-1/2 mb-4">
-              <div class="portfolio-slider mt-5">
-                <div class="img-box">
-                  <img src="./assets/images/portfolio-img-1.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div
-                    class="upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-                <div class="img-box">
-                  <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div
-                    class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-                <div class="img-box">
-                  <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div
-                    class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w1/2 px-2  md:w-1/2">
-              <div class="slick-carousel flex flex-wrap justify-center items-center relative">
-                <div class="img-box relative m-5 overflow-hidden ">
-                  <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div class="upper-content">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-                <div class="img-box relative m-5 overflow-hidden ">
-                  <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div class="upper-content">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-                <div class="img-box  relative m-5 overflow-hidden  ">
-                  <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div class="upper-content">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-                <div class="img-box relative m-5 overflow-hidden">
-                  <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="object-contain w-full h-auto">
-                  <div class="upper-content">
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
-                      Aliqua id fugiat nostrud
-                    </p>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex justify-end space-x-3 items-center mt-64 ">
-                <a href="#"
-                  class="font-2 not-italic font-semibold text-base leading-5 uppercase text-gray-800 underline flex-1 pl-14">See
+        <!-- portfolio -->
+        <main>
+            <section>
+                <div class="container mx-auto px-4 pt-28">
+                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-0">Portfolio</h1>
+                    <div class="flex flex-row gap-1 pt-10">
+                        <div class="w-1/2 md:w-1/2 mb-4">
+                            <div class="portfolio-slider mt-5">
+                                <div class="img-box">
+                                    <img src="./assets/images/portfolio-img-1.png" alt="Left Image" class="object-contain w-full h-auto">
+                                    <div class="upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="img-box">
+                                    <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-auto">
+                                    <div class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="img-box">
+                                    <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="object-contain w-full h-auto">
+                                    <div class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w1/2 px-2  md:w-1/2">
+                            <div class="slick-carousel flex flex-wrap justify-center items-center relative">
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio " class="h-80">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-80">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="h-80 object-contain w-full ">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio " class="h-80">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-80">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-card">
+                                    <div class="img-box relative m-5 overflow-hidden">
+                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="h-80 object-contain w-full ">
+                                    </div>
+                                    <div class="portfolio-description pl-5">
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
+                                            Aliqua id fugiat nostrud
+                                        </p>
+                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-end space-x-3 items-center mt-64 ">
+                                <a href="#" class="font-2 not-italic font-semibold text-base leading-5 uppercase text-gray-800 underline flex-1 pl-14">See
                   All</a>
-              </div>
-            </div>
-          </div>
-        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      </section>
-      <!-- testominal section -->
-      <section>
-        <div class="container mx-auto px-4 pt-16">
-          <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10 ">Testimonials</h1>
-          <div class="testominal-slider relative">
-            <div class="slider-box flex py-8">
-              <div class="text-box flex-1 opacity-0 animate-slide-left relative">
-                <div class=" p-2 pt-4 ">
-                  <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class"><span>
+            </section>
+            <!-- testominal section -->
+            <section>
+                <div class="container mx-auto px-4 pt-16">
+                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10 ">Testimonials</h1>
+                    <div class="testominal-slider relative">
+                        <div class="slider-box flex py-8">
+                            <div class="text-box flex-1 opacity-0 animate-slide-left relative">
+                                <div class="p-2 pt-4">
+                                    <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class"><span>
                     A
-                  </span>met minim
-                    molliteniam consequat
-                    sunt </h1>
-                  <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                  </blockquote>
-                  <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
+                  </span>met minim molliteniam consequat sunt </h1>
+                                    <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
+                                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </blockquote>
+                                    <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
                     Flores, Juanita
                   </cite>
-                  <div class="small-image mt-9 mr-3 opacity-0 animate-slide-right">
-                    <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
-                  </div>
-                </div>
-              </div>
-              <div class="img-box opacity-0 animate-slide-right">
-                <img src="./assets/images/testominal-image.png" alt="img">
-              </div>
-            </div>
-            <div class="slider-box flex py-8">
-              <div class="text-box flex-1">
-                <div class=" p-2 pt-4 ">
-                  <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class"> Amet minim
-                    molliteniam consequat
-                    sunt </h1>
-                  <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                  </blockquote>
-                  <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
+                                    <div class="small-image mt-9 mr-3 opacity-0 animate-slide-right">
+                                        <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box opacity-0 animate-slide-right">
+                                <img src="./assets/images/testominal-image.png" alt="img">
+                            </div>
+                        </div>
+
+                        <div class="slider-box flex py-8">
+                            <div class="text-box flex-1">
+                                <div class=" p-2 pt-4 ">
+                                    <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class"> Amet minim molliteniam consequat sunt </h1>
+                                    <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
+                                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </blockquote>
+                                    <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
                     Flores, Juanita
                   </cite>
-                  <div class="small-image mt-9 mr-3">
-                    <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
-                  </div>
-                </div>
-              </div>
-              <div class="img-box">
-                <img src="./assets/images/testominal-image.png" alt="img">
-              </div>
-            </div>
-            <div class="slider-box flex py-8">
-              <div class="text-box flex-1">
-                <div class=" p-2 pt-4 ">
-                  <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class "> Amet
-                    minim molliteniam consequat
-                    sunt </h1>
-                  <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                  </blockquote>
-                  <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
+                                    <div class="small-image mt-9 mr-3">
+                                        <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="./assets/images/testominal-image.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="slider-box flex py-8">
+                            <div class="text-box flex-1">
+                                <div class=" p-2 pt-4 ">
+                                    <h1 class="font-1 not-italic font-normal text-gray-800 text-4xl pb-4 relative cooma-class "> Amet minim molliteniam consequat sunt </h1>
+                                    <blockquote class="my-green font-2 italic font-normal text-base text-gray-800 pl-5 pb-10">
+                                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </blockquote>
+                                    <cite class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 ">
                     Flores, Juanita
                   </cite>
-                  <div class="small-image mt-9 mr-3">
-                    <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
-                  </div>
+                                    <div class="small-image mt-9 mr-3">
+                                        <img src="./assets/images/testominal-img-2.png" alt="img" class="float-right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <img src="./assets/images/testominal-image.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="img-box">
-                <img src="./assets/images/testominal-image.png" alt="img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Karissa  Section -->
-      <section>
-        <div class="container mx-auto px-4 ">
-          <div class="mb-8 p-2 flex justify-center items-center w-full  flex-wrap pt-24  ">
-
-            <div class="kaira-div w-full flex flex-col  md:w-1/2 lg:w-1/4 bg-grey">
-
-              <h1
-                class="font-1 text-7xl pt-64 flex-1 leading-none tracking-tighter not-italic font-normal uppercase text-gray-800">
-                Karissa Smith
-              </h1>
-
-              <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">
-                Karissa is the artist behind Henna Happens, a professionally and internationally trained henna artist.
-              </p>
-            </div>
-
-            <div class=" w-full relative lg:w-3/4  ">
-              <div class="image-article">
-                <img src="./assets/images/articale_image.png" alt="art">
-              </div>
-              <div class="overlay-text absolute bottom-20 ">
-                <h1 class="font-1 not-italic font-normal green text-5xl relative cooma-class-two">
-                 <span class="text-white">A</span>met minim <span class="text-white">M</span>lliteniam
-                </h1>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- second-article -->
-      <section>
-        <div class="container mx-auto px-4">
-          <div class=" mb-8 w-full  flex flex-wrap pt-16">
-            <div class=" w-full self-end md:w-1/2 lg:w-1/4 ">
-              <div class="artical-second">
-                <img src="./assets/images/artical-2-img.png" alt="art">
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/4 ">
-              <div class="desc-articale ">
-                <p class="font-2 not-italic font-normal text-base inline-flex gap-1 leading-5 pr-1 text-gray-800">
-                  <span class="font-1 not-italic font-normal green text-7xl ">
+            </section>
+            <!-- Karissa  Section -->
+            <section>
+                <div class="container mx-auto px-4 ">
+                    <div class="mb-8 p-2 flex justify-center items-center w-full  flex-wrap pt-24  ">
+                        <div class="kaira-div w-full flex flex-col  md:w-1/2 lg:w-1/4 bg-grey">
+                            <h1 class="font-1 text-7xl pt-64 flex-1 leading-none tracking-tighter not-italic font-normal uppercase text-gray-800">
+                                Karissa Smith
+                            </h1>
+                            <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">
+                                Karissa is the artist behind Henna Happens, a professionally and internationally trained henna artist.
+                            </p>
+                        </div>
+                        <div class=" w-full relative lg:w-3/4  ">
+                            <div class="image-article">
+                                <img src="./assets/images/articale_image.png" alt="art">
+                            </div>
+                            <div class="overlay-text absolute bottom-20 ">
+                                <h1 class="font-1 not-italic font-normal green text-5xl relative cooma-class-two">
+                                    <span class="text-white">A</span>met minim <span class="text-white">M</span>lliteniam
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- second-article -->
+            <section>
+                <div class="container mx-auto px-4">
+                    <div class=" mb-8 w-full  flex flex-wrap pt-16">
+                        <div class=" w-full self-end md:w-1/2 lg:w-1/4 ">
+                            <div class="artical-second">
+                                <img src="./assets/images/artical-2-img.png" alt="art">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/4 ">
+                            <div class="desc-articale ">
+                                <p class="font-2 not-italic font-normal text-base inline-flex gap-1 leading-5 pr-1 text-gray-800">
+                                    <span class="font-1 not-italic font-normal green text-7xl ">
                     A
-                  </span>
-                  natural artist at heart, she was introduced to the medium in 2014 and
-                </p>
-                <p class="font-2 not-italic font-normal text-base leading-5  text-gray-800 pr-5">
-                  instantly fell in love.
-                  With a passionate 8 years of professional experience,
-                  she specializes in bridal, Indo-Arabic, Moroccan, and
-                  contemporary designs; each design is uniquely freehand and
-                  can tailored for you, the possibilities are
-                  endless.
-                </p>
-                <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pr-5 pt-3">
-                  Our fresh henna and jagua products are all natural, plant based
-                  and hand mixed in small batches for the
-                  highest staining quality and will definitely be a hit at your
-                  next party, wedding, or event.
-                </p>
-                <div class="relative -mr-32">
-                  <h3 class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 pt-4">
-                    Book now for your one of a kind design!
-                  </h3>
-                </div>
-              </div>
+                  </span> natural artist at heart, she was introduced to the medium in 2014 and
+                                </p>
+                                <p class="font-2 not-italic font-normal text-base leading-5  text-gray-800 pr-5">
+                                    instantly fell in love. With a passionate 8 years of professional experience, she specializes in bridal, Indo-Arabic, Moroccan, and contemporary designs; each design is uniquely freehand and can tailored for you, the possibilities are endless.
+                                </p>
+                                <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pr-5 pt-3">
+                                    Our fresh henna and jagua products are all natural, plant based and hand mixed in small batches for the highest staining quality and will definitely be a hit at your next party, wedding, or event.
+                                </p>
+                                <div class="relative -mr-32">
+                                    <h3 class="font-2 not-italic font-semibold text-xl leading-6 text-gray-800 pt-4">
+                                        Book now for your one of a kind design!
+                                    </h3>
+                                </div>
+                            </div>
 
-            </div>
-            <div class="  w-full lg:w-1/2 ">
-              <div class="artical-third">
-                <img src="./assets/images/artical-3-img.png" alt="art">
-                <div class="button-articale flex justify-end items-center mt-24">
-                  <a href="#"
-                    class="font-2 border-black bg-black not-italic font-normal text-base text-white  px-20 py-4
+                        </div>
+                        <div class="  w-full lg:w-1/2 ">
+                            <div class="artical-third">
+                                <img src="./assets/images/artical-3-img.png" alt="art">
+                                <div class="button-articale flex justify-end items-center mt-24">
+                                    <a href="#" class="font-2 border-black bg-black not-italic font-normal text-base text-white  px-20 py-4
                 
                 hover:bg-transparent hover:text-black hover:border-black  px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Meet
                     the
                     Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- tabs section -->
-      <section>
-        <div class="container  mx-auto px-4 pt-24">
-          <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Services</h1>
-          </div>
+            </section>
+            <!-- tabs section -->
+            <section>
+                <div class="container  mx-auto px-4 pt-24">
+                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Services</h1>
+                </div>
 
-          <div class="tabs flex justify-center gap-16 py-9 relative">
-            <div class="tab">
-              <a class="tab-button active font-2 not-italic font-normal text-base leading-5 grey-color cursor-pointer"
-                data-tab="tab1">Weddings</a>
-            </div>
-            <div class="tab">
-              <a class="tab-button font-2 not-italic font-normal text-base leading-5  grey-color cursor-pointer"
-                data-tab="tab2">Individual
+                <div class="tabs flex justify-center gap-16 py-9 relative">
+                    <div class="tab">
+                        <a class="tab-button active font-2 not-italic font-normal text-base leading-5 grey-color cursor-pointer" data-tab="tab1">Weddings</a>
+                    </div>
+                    <div class="tab">
+                        <a class="tab-button font-2 not-italic font-normal text-base leading-5  grey-color cursor-pointer" data-tab="tab2">Individual
                 Appountment</a>
-            </div>
-            <div class="tab">
-              <a class="tab-button font-2 not-italic font-normal text-base leading-5  grey-color cursor-pointer" data-tab="tab3">Party
+                    </div>
+                    <div class="tab">
+                        <a class="tab-button font-2 not-italic font-normal text-base leading-5  grey-color cursor-pointer" data-tab="tab3">Party
                 &amp;
                 Events</a>
-            </div>
-          </div>
-          <div class="container mx-auto px-4 pb-20">
-            <div class="tab-content p-2" id="tab1">
-              <div class="flex py-20 gap-3">
-                <div class="w-1/2 ">
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        01
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
-                        Bridal Henna
-                      </h1>
                     </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20">
-                      Allows time for two wrap-around detailed hand designs from slightly above the wrists
-                      down to fingers,
-                      palms, and medium coverage feet using Ash Kumar Certified bridal techniques. Designs can
-                      be tailored to
-                      your specific needs and are customized for each bride.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="./appoinment.html"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                </div>
+                <div class="container mx-auto px-4 pb-20">
+                    <div class="tab-content p-2" id="tab1">
+                        <div class="flex py-20 gap-3">
+                            <div class="w-1/2 ">
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            01
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
+                                            Bridal Henna
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20">
+                                        Allows time for two wrap-around detailed hand designs from slightly above the wrists down to fingers, palms, and medium coverage feet using Ash Kumar Certified bridal techniques. Designs can be tailored to your specific needs and are customized for each
+                                        bride.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="./appoinment.html" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                              hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-1/2">
-                  <div class="image-div">
-                    <img src="./assets/images/bridal-image.png" alt="bridal">
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-1/2 ">
-                  <div class="image-div">
-                    <img src="./assets/images/wedding-img-2.png" alt="wedding">
-                  </div>
-  
-                </div>
-                <div class="w-1/2">
-  
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        02
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
-                        Wedding Party
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
-                      Adorn your wedding guests in custom one-of-a-kind freestyle henna designs. Small to
-                      medium coverage
-                      strip designs. Rate includes 4x2' table with cloth, signage, two chairs, aftercare
-                      sheets for each
-                      guest.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="./appoinment.html"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <div class="image-div">
+                                    <img src="./assets/images/bridal-image.png" alt="bridal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="w-1/2 ">
+                                <div class="image-div">
+                                    <img src="./assets/images/wedding-img-2.png" alt="wedding">
+                                </div>
+
+                            </div>
+                            <div class="w-1/2">
+
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            02
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
+                                            Wedding Party
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
+                                        Adorn your wedding guests in custom one-of-a-kind freestyle henna designs. Small to medium coverage strip designs. Rate includes 4x2' table with cloth, signage, two chairs, aftercare sheets for each guest.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="./appoinment.html" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                              hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="tab-content hidden" id="tab2">
-              <div class="flex py-20 gap-3">
-                <div class="w-1/2 ">
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        01
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 pr-10 ">
-                        Individual Appointment
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20 pt-3">
-                      Allows enough time for two medium coverage detailed designs, one extra large design for
-                      one person, or split the cost with up to 8 individuals for more simple designs.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+
+                    <div class="tab-content hidden" id="tab2">
+                        <div class="flex py-20 gap-3">
+                            <div class="w-1/2 ">
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            01
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 pr-10 ">
+                                            Individual Appointment
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20 pt-3">
+                                        Allows enough time for two medium coverage detailed designs, one extra large design for one person, or split the cost with up to 8 individuals for more simple designs.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                              hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-1/2">
-                  <div class="image-div">
-                    <img src="./assets/images/individual-img-1.png" alt="bridal">
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-1/2 ">
-                  <div class="image-div">
-                    <img src="./assets/images/individual-img-2.png" alt="wedding">
-                  </div>
-  
-                </div>
-                <div class="w-1/2">
-  
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        02
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
-                        Belly Henna
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
-                      Adorn your baby bump and celebrate new life with your custom belly henna. Great for
-                      memorable maternity photoshoots.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <div class="image-div">
+                                    <img src="./assets/images/individual-img-1.png" alt="bridal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="w-1/2 ">
+                                <div class="image-div">
+                                    <img src="./assets/images/individual-img-2.png" alt="wedding">
+                                </div>
+
+                            </div>
+                            <div class="w-1/2">
+
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            02
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
+                                            Belly Henna
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
+                                        Adorn your baby bump and celebrate new life with your custom belly henna. Great for memorable maternity photoshoots.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex py-20 gap-3">
-                <div class="w-1/2 ">
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        03
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
-                        Henna Crown
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
-                      A henna crown is an awesome empowering transition for all the chemo warriors out there.
-                      Special 50% off discounted rate, travel included.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex py-20 gap-3">
+                            <div class="w-1/2 ">
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            03
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
+                                            Henna Crown
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
+                                        A henna crown is an awesome empowering transition for all the chemo warriors out there. Special 50% off discounted rate, travel included.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <div class="image-div">
+                                    <img src="./assets/images/individual-img-3.png" alt="bridal">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="w-1/2">
-                  <div class="image-div">
-                    <img src="./assets/images/individual-img-3.png" alt="bridal">
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="tab-content hidden" id="tab3">
-              <div class="flex py-20 gap-3">
-                <div class="w-1/2 ">
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        01
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 pr-10 ">
-                        Henna Party
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20 pt-2">
-                      Have a private party or corporate event? Henna makes a great addition and leaves a
-                      red/brown stain on the skin. Party designs take about 3-5 minutes each or less to ensure
-                      each guest can get at least one simple design.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+
+                    <div class="tab-content hidden" id="tab3">
+                        <div class="flex py-20 gap-3">
+                            <div class="w-1/2 ">
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            01
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 pr-10 ">
+                                            Henna Party
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-20 pt-2">
+                                        Have a private party or corporate event? Henna makes a great addition and leaves a red/brown stain on the skin. Party designs take about 3-5 minutes each or less to ensure each guest can get at least one simple design.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-1/2">
-                  <div class="image-div">
-                    <img src="./assets/images/event-img-1.png" alt="bridal">
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-3">
-                <div class="w-1/2 ">
-                  <div class="image-div">
-                    <img src="./assets/images/event-img-2.png" alt="wedding">
-                  </div>
-  
-                </div>
-                <div class="w-1/2">
-  
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        02
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800  pr-5">
-                        White Henna Glam Party
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
-                      White henna glam lasts 1-3 days and is water resistant. Latex-free, dries in 5 minutes,
-                      ready to wear, and great for those who want to try something different.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#"
-                        class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <div class="image-div">
+                                    <img src="./assets/images/event-img-1.png" alt="bridal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <div class="w-1/2 ">
+                                <div class="image-div">
+                                    <img src="./assets/images/event-img-2.png" alt="wedding">
+                                </div>
+
+                            </div>
+                            <div class="w-1/2">
+
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            02
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800  pr-5">
+                                            White Henna Glam Party
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
+                                        White henna glam lasts 1-3 days and is water resistant. Latex-free, dries in 5 minutes, ready to wear, and great for those who want to try something different.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                              hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out">Learn
                         More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex py-20 gap-3">
-                <div class="w-1/2 ">
-                  <div class="weeding-desc">
-                    <div class="inline-text inline-flex gap-4">
-                      <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
-                        03
-                      </h1>
-                      <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
-                        Jagua Party
-                      </h1>
-                    </div>
-                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
-                      Jagua stains a navy/black design on the skin and can get washed the same day, as soon as
-                      2-3hrs after application.
-                    </p>
-                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
-                      <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex py-20 gap-3">
+                            <div class="w-1/2 ">
+                                <div class="weeding-desc">
+                                    <div class="inline-text inline-flex gap-4">
+                                        <h1 class="font-1 not-italic font-normal uppercase green tracking-tighter  text-7xl">
+                                            03
+                                        </h1>
+                                        <h1 class="font-1 text-4xl not-italic font-normal text-gray-800 ">
+                                            Jagua Party
+                                        </h1>
+                                    </div>
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 pl-24">
+                                        Jagua stains a navy/black design on the skin and can get washed the same day, as soon as 2-3hrs after application.
+                                    </p>
+                                    <div class="end-btn flex items-center justify-end mr-6 mt-11 ">
+                                        <a href="#" class="bg-white font-2 learn-more not-italic font-normal text-base text-gray-800
                                 hover:bg-black hover:text-white hover:border-black  py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
                                 ">Learn
                         More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/2">
+                                <div class="image-div">
+                                    <img src="./assets/images/event-img-3.png" alt="bridal">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="w-1/2">
-                  <div class="image-div">
-                    <img src="./assets/images/event-img-3.png" alt="bridal">
-                  </div>
-                </div>
-              </div>
-            </div>
-  
 
-          </div>
-      </section>
-      <!-- record image -->
-      <section class="bg-cover bg-center bg-no-repeat bg-fixed mt-10"
-        style="background-image: url('./assets/images/Request-bg.png')">
-        <div class="container  mx-auto px-4 py-20 flex flex-col justify-center items-center">
-          <div class="content-center  px-52 flex flex-col">
-            <h1 class="font-1 not-italic font-normal text-6xl  text-white text-center">
-              Request an Appointment today!
-            </h1>
-            <p class="font-1 not-italic font-normal text-2xl leading-8 text-white pt-5 text-center">
-              Will Travel to You!
-            </p>
-            <div class="small mx-auto mb-8 p-2 w-full flex flex-wrap mt-5 pt-16">
-              <div class="h-28 w-full lg:w-1/2 ">
-                <div class="left-content pl-10 pr-5">
-                  <p class="font-2 right not-italic font-normal text-base leading-5 text-white pr-[60px]">
-                    For parties &amp; events, design books (optional), aftercare sheets, signage and artistry will be
-                    provided at
-                    the location of choice.
-                  </p>
+
                 </div>
-              </div>
-              <div class="h-28 w-full lg:w-1/2 ">
-                <div class="right-content">
-                  <p class="font-2 not-italic font-normal text-base leading-5 text-white px-9 pt-16">
-                    Looking for something smaller? Find our Booth Location!
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="button-center text-center mt-10">
-              <a href="#" class="font-2 not-italic font-normal text-base text-gray-800 bg-white py-4 px-36
+            </section>
+            <!-- record image -->
+            <section class="bg-cover bg-center bg-no-repeat bg-fixed mt-10" style="background-image: url('./assets/images/Request-bg.png')">
+                <div class="container  mx-auto px-4 py-20 flex flex-col justify-center items-center">
+                    <div class="content-center  px-52 flex flex-col">
+                        <h1 class="font-1 not-italic font-normal text-6xl  text-white text-center">
+                            Request an Appointment today!
+                        </h1>
+                        <p class="font-1 not-italic font-normal text-2xl leading-8 text-white pt-5 text-center">
+                            Will Travel to You!
+                        </p>
+                        <div class="small mx-auto mb-8 p-2 w-full flex flex-wrap mt-5 pt-16">
+                            <div class="h-28 w-full lg:w-1/2 ">
+                                <div class="left-content pl-10 pr-5">
+                                    <p class="font-2 right not-italic font-normal text-base leading-5 text-white pr-[60px]">
+                                        For parties &amp; events, design books (optional), aftercare sheets, signage and artistry will be provided at the location of choice.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="h-28 w-full lg:w-1/2 ">
+                                <div class="right-content">
+                                    <p class="font-2 not-italic font-normal text-base leading-5 text-white px-9 pt-16">
+                                        Looking for something smaller? Find our Booth Location!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-center text-center mt-10">
+                            <a href="./appoinment-request.html" class="font-2 not-italic font-normal text-base text-gray-800 bg-white py-4 px-36
             hover:bg-black hover:text-white hover:border-black  px-18 md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
             ">Make An
                 Appointment With An Artist</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--location-section -->
+            <section>
+                <div class="pt-28">
+                    <div class="container mx-auto">
+                        <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Location</h1>
+                    </div>
+
+                    <div class="flex">
+                        <div class="w-full">
+                            <div class="w-4/5 ml-auto ">
+                                <div class="list pl-5">
+                                    <ul>
+                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                            Keep It Simple in Waikiki
+                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12 ">
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">227 Lewers St R-103Honolulu, HI 96815United States</p>
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
+                                                    This week's schedule:
+                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">27th Friday 4-8pm</b>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                            Kaka'ako Farmer's Market
+                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">
+                                                    210 Ward Ave,Honolulu, HI 96814United States</p>
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col">
+                                                    This week's schedule:
+                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2"> Saturday
+                            8am-12pm</b>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                            Beachside Luxe in 'Alohilani
+                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 ">The Shops at ‘Alohilani Resort Waikiki Beach2490 Kalākaua Ave, Honolulu HI 96815 United States​</p>
+                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
+                                                    This week's schedule:
+                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">Sunday 12-4pm</b>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="w-1/2">
+                            <div class="img-boxe">
+                                <img src="./assets/images/location-img.png" alt="location-img" class="w-full">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- faqs secttion -->
+            <section>
+
+                <div class="pt-20">
+                    <div class="mb-8 flex w-full flex-wrap pt-10 py-20">
+                        <div class="qa-div w-1/3 flex flex-row  bg-grey justify-center">
+                            <h1 class="not-italic font-normal text-6xl text-gray-800 font-1 pt-6">
+                                Q&A
+                            </h1>
+                        </div>
+                        <div class="w-2/3 relative  ">
+
+                            <div class="faq-main-div">
+                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px;">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    What is Henna?
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Henna is a term used for a paste made from the leaves of the hennaplant, or Lawsonia inermis.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Our recipe is simply the ground henna leafpowder mixed with lemon juice, essential oils (cajeput, lavender, eucalyptus, tea tree), and sugar.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Ancient uses of henna include anti-fungal properties for medical use, skin, hair, leather, and fabric dye, beautification, and ceremonial use, many of which are still in practicetoday.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Henna is not recommended for those with G6PD, a hereditarydeficiency.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Please inform your artist if you are pregnant. We offer maternal henna, our lavender essential oil only blend. This blend is the most gentle andalso recommended for chemotherapy patients or those with sensitive skin.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    PSA: Black “henna” warning: Without paying attention it can be easy toget natural henna mixed up with the chemical slurry that’s called “black henna”. Please avoid the artificial shelf stable cones, they canbe full of toxic preservatives, hair dye (PPD),
+                                                    and other ingredients thatcould potentially cause toxic poisoning or chemical burns.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    How to be safe: Ask your henna artist exactly what the ingredient listis, including essential oils, and what color the stain will be. Naturalhenna starts as orange and takes 2-3 days to oxidizae into a red browncolor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Want the tattoo look? Meet Jagua!
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Jagua is a fruit, Genipa Americana, from South America which stainsthe skin a navy black color. Native groups have been using this fruit forbeautification and medicinal use.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+
+                                                    Jagua, a distant relative to the kiwi, is picked prematurely and juiced. With water consistency, it is then thickened to a gel with food gradexanthan gum and a touch of lavender essential oil to make our jaguagel.
+
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Allergy notice: Although jagua is a fruit based dye, those with kiwiallergies or skin conditions such as psoriasis, eczema, or generallysensitive skin may get a reaction or flare up due to its acidity
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Aftercare: Both henna and jagua
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    The paste or gel will take ~1 hour to dry and set, during this time becareful to avoid contact of any kind to prevent smearing. Even afterfixing, the smear may still appear.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Both stains darkest towards the hands and feet and lightest towardsthe center of the body, depending on the thickness of your skin.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Designs take 2 days to darken and typically last 1-2 weeks dependingon lifestyle, skin type, and aftercare.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Henna Aftercare
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Once the paste has dried do not pick off your design. Leave it on for 4-6 hours minimum, longer the better. Henna will crack and flake off onits own, this is normal and will reveal a bright orange color.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Avoidwetting the area for the first 12 hours and remove any left over pastewith oil. The orange stain will oxidize and darken to a red brown colorover the next 2-3 days.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Moisturize regularly to extend the life of your design. Avoid exfoliation, harsh soaps, hot tubs, and pools, these will all shorten the life of yourdesign.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Jagua Aftercare
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Once the gel has set, avoid friction directly over the design as it maytransfer or shift. Leave it on for 2-3 hours minimum, longer the better.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Do not sleep or swim with your design.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Before sleeping or swimming, use soap and water, lather and wash thegel off thoroughly. Once squeaky clean, give the area and surroundingarea, wherever water dripped down and the hand you used to wash it afinal rinse to make sure no shadows appear.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    The design will be invisibleat first but will slowly oxidize and darken over the next 24-48 hours.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    White henna glam
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Henna glam is a non-staining, water resistant, latex free, quick drying, ready to wear body paint adhesive that typically lasts 1-3 days and can.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                    Perfect for events, festivals, or photoshoots, henna glam is made of body-safe FDA compliant ingredients.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    What's the price?
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pr-40">
+                                                    All appointments require a simple agreement form and a 50% depositfulfilled to secure the artist and reserve the date.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Both rates have a 2hour minimum and have a $50 travel fee.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Private mobile appointment
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    $125 an hourIncludes chairs and kit for mobile henna artistry.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                    Henna Party Rate
+                                                </h1>
+                                                <span class="arrow">
+                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                        </span>
+                                            </div>
+                                            <div class="accordion-content border-0">
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    $150 an hour.
+                                                </p>
+                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                    Recommended for more of a party presence. Includes chairs forartistry, small side table with cloth and mini umbrella decor, standing sign, optional glitter gel accents and aftercare sheets for each guest totake home so they know how to take care of their
+                                                    new design.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- footer section -->
+        <footer id="footer" class="top-line">
+            <div class="logo pt-14">
+                <h1 class="not-italic font-normal text-2xl leading-8 text-gray-800 font-1 text-center ">Henna Happens</h1>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!--location-section -->
-      <section>
-        <div class="pt-28">
-          <div class="container mx-auto">
-            <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Location</h1>
-          </div>
-         
-          <div class="flex">
-            <div class="w-1/2 pl-52">
-              <div class="list">
-                <ul>
-                  <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                    Keep It Simple in Waikiki
-                    <div class="flex flex-col pt-6 gap-8">
-                      <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 self-center p-left ">227
-                        Lewers St
-                        R-103Honolulu, HI 96815United States</p>
-                      <p
-                        class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col items-left self-end  pr-16  ">
-                        This week's schedule:
-                        <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">27th Friday 4-8pm</b>
-                      </p>
+            <div class="container mx-auto pt-14">
+                <div class="top-footer flex flex-col md:flex-row">
+                    <div class="col md:w-1/2">
+                        <div class="text-footer pr-0 md:pr-36">
+                            <h1 class="text-4xl not-italic font-normal text-gray-800 font-1 ">
+                                Are you ready to book an appointment with the artist?
+                            </h1>
+                            <a class="mt-8 font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
+                        </div>
                     </div>
-                  </li>
-                  <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                    Kaka'ako Farmer's Market
-                    <div class="flex flex-col pt-6 gap-8">
-                      <p
-                        class="not-italic font-normal text-base leading-5 text-gray-800 font-2 self-center p-left ">
-                        210 Ward Ave,Honolulu, HI
-                        96814United States</p>
-                      <p
-                        class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col items-left self-end  pr-12">
-                        This week's schedule:
-                        <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2"> Saturday
-                          8am-12pm</b>
-                      </p>
+                    <div class="col md:w-1/4">
+                        <div class="items-footer">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">About</a></li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Portfolio</a>
+                                        </li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Services</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Location</a></li>
+                                        <li class="p-1"> <a href="./events.html" class="font-2 not-italic font-normal text-base leading-5 text-black">Events</a></li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                  <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                    Beachside Luxe in 'Alohilani
-                    <div class="flex flex-col pt-6 gap-8">
-                      <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 self-center  p-left ">The
-                        Shops at ‘Alohilani
-                        Resort Waikiki Beach2490 Kalākaua Ave,
-                        Honolulu HI 96815
-                        United States​</p>
-                      <p
-                        class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col   items-left self-end pr-20">
-                        This week's schedule:
-                        <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">Sunday 12-4pm</b>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-            <div class="w-1/2">
-              <div class="img-boxe">
-                <img src="./assets/images/location-img.png" alt="location-img" class="w-full">
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- faqs secttion -->
-      <section>
-        
-        <div class="pt-20">
-          <div class="mb-8  flex  w-full  flex-wrap pt-10    py-20">
-            <div class="qa-div w-1/3 flex flex-row  bg-grey  justify-center ">
-              <h1 class="not-italic font-normal text-6xl text-gray-800 font-1 pt-6">
-                Q&A
-              </h1> 
-            </div>
-
-
-            <div class="w-2/3 relative  ">
-
-              <div class="main-faq-div">
-                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px;">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          What is Henna?
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Henna is a term used for a paste made from the leaves of the hennaplant, or Lawsonia inermis.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Our recipe is simply the ground henna leafpowder mixed with lemon juice,
-                          essential oils (cajeput, lavender, eucalyptus, tea tree), and sugar.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Ancient uses of henna include anti-fungal properties for medical use, skin, hair, leather, and
-                          fabric dye,
-                          beautification, and ceremonial use, many of which are still in practicetoday.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Henna is not recommended for those with G6PD, a hereditarydeficiency.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Please inform your artist if you are pregnant. We offer maternal henna, our lavender essential
-                          oil
-                          only blend. This blend is the most gentle andalso recommended for chemotherapy patients or
-                          those
-                          with sensitive
-                          skin.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          PSA: Black “henna” warning: Without paying attention it can be easy toget natural henna mixed
-                          up
-                          with the chemical slurry that’s called “black henna”. Please avoid the artificial shelf stable
-                          cones, they canbe full of toxic preservatives, hair dye (PPD), and other ingredients thatcould
-                          potentially cause toxic poisoning or chemical burns.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          How to be safe: Ask your henna artist exactly what the ingredient listis, including essential
-                          oils, and what color the stain will be. Naturalhenna starts as orange and takes 2-3 days to
-                          oxidizae into a red browncolor.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Want the tattoo look? Meet Jagua!
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Jagua is a fruit, Genipa Americana, from South America which stainsthe skin a navy black
-                          color.
-                          Native groups have been using this fruit forbeautification and medicinal use.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-
-                          Jagua, a distant relative to the kiwi, is picked prematurely and juiced. With water
-                          consistency,
-                          it is then thickened to a gel with food gradexanthan gum and a touch of lavender essential oil
-                          to
-                          make our jaguagel.
-
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Allergy notice: Although jagua is a fruit based dye, those with kiwiallergies or skin
-                          conditions
-                          such as psoriasis, eczema, or generallysensitive skin may get a reaction or flare up due to
-                          its
-                          acidity
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 10px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Aftercare: Both henna and jagua
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          The paste or gel will take ~1 hour to dry and set, during this time becareful to avoid contact
-                          of
-                          any kind to prevent smearing. Even afterfixing, the smear may still appear.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Both stains darkest towards the hands and feet and lightest towardsthe center of the body,
-                          depending on the thickness of your skin.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Designs take 2 days to darken and typically last 1-2 weeks dependingon lifestyle, skin type,
-                          and
-                          aftercare.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 18px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Henna Aftercare
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Once the paste has dried do not pick off your design. Leave it on for 4-6 hours minimum,
-                          longer
-                          the better. Henna will crack and flake off onits own, this is normal and will reveal a bright
-                          orange color.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Avoidwetting the area for the first 12 hours and remove any left over pastewith oil. The
-                          orange
-                          stain will oxidize and darken to a red brown colorover the next 2-3 days.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Moisturize regularly to extend the life of your design. Avoid exfoliation, harsh soaps, hot
-                          tubs,
-                          and pools, these will all shorten the life of yourdesign.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 10px 0px 10px 5px;">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Jagua Aftercare
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Once the gel has set, avoid friction directly over the design as it maytransfer or shift.
-                          Leave
-                          it
-                          on for 2-3 hours minimum, longer the better.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Do not sleep or swim with your design.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Before sleeping or swimming, use soap and water, lather and wash thegel off thoroughly. Once
-                          squeaky clean, give the area and surroundingarea, wherever water dripped down and the hand you
-                          used to wash it afinal rinse to make sure no shadows appear.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          The design will be invisibleat first but will slowly oxidize and darken over the next 24-48
-                          hours.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 10px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          White henna glam
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Henna glam is a non-staining, water resistant, latex free, quick drying, ready to wear body
-                          paint
-                          adhesive that typically lasts 1-3 days and can.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                          Perfect for events, festivals, or photoshoots, henna glam is made of body-safe FDA compliant
-                          ingredients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 18px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          What's the price?
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pr-40">
-                          All appointments require a simple agreement form and a 50% depositfulfilled to secure the
-                          artist
-                          and reserve the date.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Both rates have a 2hour minimum and have a $50 travel fee.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 10px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Private mobile appointment
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          $125 an hourIncludes chairs and kit for mobile henna artistry.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="accordion" class="relative"  style="padding: 10px 0px 10px 5px; ">
-                  <div class="accordion">
-                    <div class="accordion-item">
-                      <div class="accordion-header">
-                        <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                          Henna Party Rate
-                        </h1>
-                        <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                      </div>
-                      <div class="accordion-content border-0">
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          $150 an hour.
-                        </p>
-                        <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                          Recommended for more of a party presence. Includes chairs forartistry, small side table with
-                          cloth
-                          and mini umbrella decor, standing sign, optional glitter gel accents and aftercare sheets for
-                          each
-                          guest totake home so they know how to take care of their new design.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    </main>
-    <!-- footer section -->
-    <footer id="footer" class="top-line">
-      <div class="logo pt-14">
-        <h1 class="not-italic font-normal text-2xl leading-8 text-gray-800 font-1 text-center ">Henna Happens</h1>
-      </div>
-      <div class="container mx-auto pt-14">
-        <div class="top-footer flex flex-col md:flex-row">
-          <div class="col col-one md:w-1/2">
-            <div class="text-footer pr-0 md:pr-36">
-              <h1 class="text-4xl not-italic font-normal text-gray-800 font-1 ">
-                Are you ready to book
-                an appointment with
-                the artist?
-              </h1>
-              <a class="mt-8 font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out"
-                href="#">Book Now</a>
-            </div>
-          </div>
-          <div class="col col-two md:w-1/4">
-            <div class="items-footer">
-              <ul>
-                <li>
-                  <ul>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">About</a></li>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">Portfolio</a>
-                    </li>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">Services</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">Location</a></li>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">Events</a></li>
-                    <li class="p-1"> <a href=""
-                        class="font-2 not-italic font-normal text-base leading-5 text-black">FAQ</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col col-three md:w-1/4">
-            <div class="footer-address flex flex-col gap-3 mt-3">
-              <span class="font-2 not-italic font-medium text-base leading-5 text-right text-black">tel. (425)
+                    <div class="col md:w-1/4">
+                        <div class="footer-address flex flex-col gap-3 mt-3">
+                            <span class="font-2 not-italic font-medium text-base leading-5 text-right text-black">tel. (425)
                 387-8307</span>
-              <span class="font-2 not-italic font-normal text-base leading-5 text-right grey-color ">Mon.-Fri. 9:00AM -
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right grey-color ">Mon.-Fri. 9:00AM -
                 6:0PM</span>
-            </div>
-            <div class="footer-address flex flex-col mt-5">
-              <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Pearl City, HI
+                        </div>
+                        <div class="footer-address flex flex-col mt-5">
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Pearl City, HI
                 96782</span>
-              <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Serving Pearl City
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Serving Pearl City
                 Area</span>
+                        </div>
+                        <ul class="social-links relative overflow-hidden flex gap-8 mt-5 float-right ">
+
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram text-2xl"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube-play text-2xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom py-10 mt-3 ">
+                    <p class="font-2 grey-color not-italic font-normal text-base leading-5 hover:text-black">Privacy Policy</p>
+                </div>
             </div>
-            <ul class="social-links relative overflow-hidden flex gap-8 mt-5 float-right ">
-              
-              <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href=""><i class="fa fa-instagram text-2xl"></i></a></li>
-              <li><a href=""><i class="fa fa-youtube-play text-2xl"></i></a></li>
-            </ul>
-          </div>
-        </div>
+        </footer>
 
-        <div class="footer-bottom py-10 mt-3 ">
-          <p class="font-2 grey-color not-italic font-normal text-base leading-5 hover:text-black">Privacy Policy</p>
-
-        </div>
-      </div>
-    </footer>
-
-  </div>
+    </div>
 
 
-  <!-- Slick Slider script -->
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="https://kit.fontawesome.com/ce278ed6db.js" crossorigin="anonymous"></script>
+    <!-- Slick Slider script -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/ce278ed6db.js" crossorigin="anonymous"></script>
 
 </body>
 

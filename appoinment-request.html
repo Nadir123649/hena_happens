@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hena Happens</title>
+    <!-- Link to Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./tailwind.config.js">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+    <div class="wrapper-div">
+
+        <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
+            <nav class="flex justify-between items-center container mx-auto relative py-8">
+                <!-- Left menu -->
+                <ul class="flex items-center md:flex space-x-8">
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./portfolio.html">portfolio</a>
+                    </li>
+                </ul>
+
+                <!-- Logo -->
+                <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="">Henna Happens</a>
+                <!-- Right menu -->
+
+                <ul class="flex items-center  md:flex space-x-8">
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">services</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">location</a>
+                    </li>
+                    <li>
+                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">FAQ</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <!-- main -->
+        <main>
+            <section>
+                <div class="container mx-auto pt-36 pb-44">
+                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 ">
+                        Appointment Request
+                    </h1>
+                    <div class="container mx-auto">
+                        <!-- form-appoinment -->
+                        <div class="form-appoinment w-full flex flex-row gap-12">
+                            <div class="left-form w-1/2">
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
+                                        First Name
+                                    </label>
+                                    <input class=" border-grey-1 mt-5 h-12 font-2  bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="First">
+                                </div>
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="email">
+                                        Email
+                                    </label>
+                                    <input class=" border-grey-1 mt-5 h-12 font-2  bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Enter Your Email">
+                                </div>
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="Phone">
+                                        Phone
+                                    </label>
+                                    <input class=" border-grey-1 mt-5 h-12 font-2   bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter Your Phone Number">
+                                </div>
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="contact-method">
+                                      Preferred Method of Contact
+                                    </label>
+                                    <div class="flex items-center mt-7">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                        Email
+                                      </label>
+                                    </div>
+                                    <div class="flex items-center mt-5">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                            Text
+                                      </label>
+                                    </div>
+                                    <div class="flex items-center mt-5">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                            Call
+                                      </label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="right-form w-1/2">
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
+                                        Last Name
+                                    </label>
+                                    <input class=" border-grey-1 mt-5 h-12 font-2   bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Last">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- appoinment-time -->
+                        <div class="appoinment-time w-full flex flex-row gap-12">
+                            <div class="left-form w-1/2">
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
+                                      Appointment Date
+                                    </label>
+                                    <div class="relative">
+                                        <input class="block w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" id="appointment-date" type="date" placeholder="MM/DD/YYYY" onblur="(this.type='text')" min="2023-04-15" max="2024-04-15">
+                                    </div>
+                                </div>
+
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="contact-method">
+                                        Appointment Location
+                                    </label>
+                                    <div class="flex items-center mt-7">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                            Private Residency
+                                      </label>
+                                    </div>
+                                    <div class="flex items-center mt-5">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                            Hotel or Venue
+                                      </label>
+                                    </div>
+                                    <div class="flex items-center mt-5">
+                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                            Other
+                                      </label>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="right-form w-1/2">
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
+                                      Appointment Time
+                                    </label>
+                                    <div class="relative flex gap-5">
+                                        <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="HH" type="text" name="month" id="month">
+                                        <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="MM" type="text" for="day" name="day" id="day">
+                                        <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="AM" type="text" for="am" name="am" id="am">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- appoinment-for-colors -->
+
+                        <div class="appoinment-colors w-full flex flex-row gap-12">
+                            <div class="left-form w-1/2">
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
+                                      Color (Prices vary)
+                                    </label>
+                                    <div class="relative">
+                                        <select class="block appearance-none w-full border-grey-1 py-2 font-2 px-3 leading-tight text-gray-700 mt-5 h-12 bg-white focus:outline-none focus:shadow-outline" id="color" name="color">
+                                            <option value="Henna (Brown/Red)">Henna (Brown/Red)</option>
+                                            <option value="Black">Black</option>
+                                            <option value="Blonde">Blonde</option>
+                                            <option value="Brunette">Brunette</option>
+                                            <option value="Other">Other</option>
+                                          </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
+                                              <path d="M6 9l6 6 6-6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="right-form w-1/2">
+
+                                <div class="my-8">
+                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
+                                        Appointment Type
+                                    </label>
+                                    <div class="relative">
+                                        <select class="block appearance-none w-full font-2 border-grey-1 py-2 px-3 leading-tight text-gray-700  mt-5 h-12 bg-white  focus:outline-none focus:shadow-outline" id="color" name="color">
+                                            <option value="private-2hr">Private Appointment (2hr)</option>
+                                            <option value="group-2hr">Group Appointment (2hr)</option>
+                                            <option value="private-1hr">Private Appointment (1hr)</option>
+                                            <option value="group-1hr">Group Appointment (1hr)</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
+                                              <path d="M6 9l6 6 6-6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- appoinment-textarea -->
+
+                        <div class="appoinment-textarea w-full">
+                            <div class="my-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-details">
+                                  Appointment Details
+                                </label>
+                                <textarea class="block appearance-none font-2 w-full border-grey-1 py-2 px-3 leading-tight text-gray-700  mt-5 h-40 bg-white  focus:outline-none focus:shadow-outline" id="appointment-details" name="appointment-details" placeholder="Examples: Location of design(s), design descriptions, how many people, etc."></textarea>
+                            </div>
+                        </div>
+                        <!-- appoinment-button -->
+
+                        <div class="appoinment-submit w-full">
+                            <div class="submit-div flex justify-end mt-16">
+                                <a href="#" class="bg-black font-2 not-italic border-black font-normal text-base text-white py-4 px-64
+                                hover:bg-transparent hover:text-black
+                             hover:border-black
+                              bg-transparent  md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
+                                ">Send Request</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- footer section -->
+        <footer id="footer" class="top-line">
+            <div class="logo pt-14">
+                <h1 class="not-italic font-normal text-2xl leading-8 text-gray-800 font-1 text-center ">Henna Happens</h1>
+            </div>
+            <div class="container mx-auto pt-14">
+                <div class="top-footer flex flex-col md:flex-row">
+                    <div class="col md:w-1/2">
+                        <div class="text-footer pr-0 md:pr-36">
+                            <h1 class="text-4xl not-italic font-normal text-gray-800 font-1 ">
+                                Are you ready to book an appointment with the artist?
+                            </h1>
+                            <a class="mt-8 font-2 border-black bg-black hover:bg-transparent hover:text-black
+                             hover:border-black font-normal text-base text-white bg-transparent py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="col md:w-1/4">
+                        <div class="items-footer">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">About</a></li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Portfolio</a>
+                                        </li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Services</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Location</a></li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Events</a></li>
+                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col md:w-1/4">
+                        <div class="footer-address flex flex-col gap-3 mt-3">
+                            <span class="font-2 not-italic font-medium text-base leading-5 text-right text-black">tel. (425)
+                  387-8307</span>
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right grey-color ">Mon.-Fri. 9:00AM -
+                  6:0PM</span>
+                        </div>
+                        <div class="footer-address flex flex-col mt-5">
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Pearl City, HI
+                  96782</span>
+                            <span class="font-2 not-italic font-normal text-base leading-5 text-right text-black">Serving Pearl City
+                  Area</span>
+                        </div>
+                        <ul class="social-links relative overflow-hidden flex gap-8 mt-5 float-right ">
+
+                            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram text-2xl"></i></a></li>
+                            <li><a href=""><i class="fa fa-youtube-play text-2xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom py-10 mt-3 ">
+                    <p class="font-2 grey-color not-italic font-normal text-base leading-5 hover:text-black">Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Slick Slider script -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/ce278ed6db.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
