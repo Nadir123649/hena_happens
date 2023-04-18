@@ -584,4 +584,14 @@ select {
     .top-footer>div:nth-child(3) {
         width: 100%;
     }
+    .accord-head {
+        font-size: 22px !important;
+    }
+    #accordion::before {
+        content: "";
+        display: none;
+    }
+    .accordion-content {
+        padding: 20px 30px 20px 0px;
+    }
 }
