@@ -615,4 +615,8 @@ select {
     .small {
         width: 100% !important;
     }
+    .star-section {
+        background-image: url("../images/star-img.png") !important;
+        background-size: cover;
+    }
 }
