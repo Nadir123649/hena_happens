@@ -612,4 +612,7 @@ select {
         top: 24%;
         left: 15px;
     }
+    .small {
+        width: 100% !important;
+    }
 }
