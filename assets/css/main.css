@@ -94,7 +94,7 @@ html {
 }
 
 .container-fluid {
-    width: 100% !important;
+    max-width: 100%!important;
 }
 
 .font-1 {
@@ -593,5 +593,11 @@ select {
     }
     .accordion-content {
         padding: 20px 30px 20px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-box-small {
+        width: 100%;
     }
 }
