@@ -90,7 +90,7 @@ html {
 /* container */
 
 .container {
-    width: 1200px !important;
+    max-width: 1200px !important;
 }
 
 .container-fluid {
