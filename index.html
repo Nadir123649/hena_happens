@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
@@ -23,55 +26,68 @@
     <div class="wrapper-div">
 
         <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
-            <nav class="flex justify-between items-center container mx-auto relative py-8">
-                <!-- Left menu -->
-                <ul class="flex items-center md:flex space-x-8">
-                    <li>
-                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
-                    </li>
-                    <li>
-                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./portfolio.html">portfolio</a>
-                    </li>
-                </ul>
+            <div class="container mx-auto">
+                <div class="main-menu-div flex justify-between  md:hidden">
+                    <div class="logo ">
+                        <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
+                    </div>
+                    <div class="menu-btn">
+                        <img src="./assets/images/mobile-menu-icon.png" alt="mobile-icon">
+                    </div>
+                </div>
 
-                <!-- Logo -->
-                <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
-                <!-- Right menu -->
+                <nav class="flex flex-col md:flex-row justify-between items-center md:relative fixed py-8 top-0 left-0">
+                    <!-- Left menu -->
+                    <ul class="flex flex-col items-center  md:flex-row space-x-8">
+                        <li>
+                            <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
+                        </li>
+                        <li>
+                            <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./portfolio.html">portfolio</a>
+                        </li>
+                    </ul>
 
-                <ul class="flex items-center  md:flex space-x-8">
-                    <li>
-                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">services</a>
-                    </li>
-                    <li>
-                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">location</a>
-                    </li>
-                    <li>
-                        <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#faqs">FAQ</a>
-                    </li>
-                </ul>
+                    <!-- Logo -->
+                    <a class="font-1 not-italic hidden font-normal text-3xl leading-8 text-gray-800 capitalize md:block" href="./index.html">Henna Happens</a>
 
-            </nav>
+                    <!-- Right menu -->
+                    <ul class="flex flex-col items-center  md:flex-row space-x-8">
+                        <li>
+                            <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">services</a>
+                        </li>
+                        <li>
+                            <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#">location</a>
+                        </li>
+                        <li>
+                            <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#faqs">FAQ</a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
         </header>
+
         <!-- banner section -->
         <div class="banner-section">
-            <div class="container mx-auto px-4  sm:px-6 pt-28 lg:w-full ">
-                <div class="lg:flex flex-wrap justify-center items-center md:-mx-5">
-                    <div class="w-full md:w-3/5 relative -mr-32 m-auto z-10 md:px-2 ">
-                        <p class="font-2 p-right not-italic pr-12 md:pr-80 font-normal text-base md:text-lg leading-5 text-gray-800 pb-5  ">
+            <div class="container mx-auto px-4 sm:px-6 pt-28 lg:w-full">
+                <div class="flex flex-col-reverse  md:flex-row flex-wrap justify-center -mx-5 ">
+                    <div class=" -mr-0  md:-mr-32 w-3/5 relative  m-auto z-10 md:px-2 ">
+                        <p class="font-2 p-right not-italic pr-0 md:pr-80 font-normal text-base md:text-lg leading-5 text-gray-800 pb-5 ">
                             All of our body art services are completely freehand, temporary, &amp; fun
                         </p>
                         <h1 class="main-heading font-1 not-italic font-normal uppercase text-5xl md:text-7xl text-gray-800 pb-10">
                             Discover beau<span class="text-white">ty</span> <i class="lowercase text-7xl font-5-italic">with</i> henna
                         </h1>
 
-                        <a class="font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-10 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
+                        <a class="font-2 border-black bg-black hover:bg-transparent hover:text-black hover:border-black font-normal text-base text-white py-4 px-10 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="./events.html">Book Now</a>
                     </div>
-                    <div class="w-full md:w-1/2 md:mt-6">
-                        <div class="banner-img w-full h-auto">
-                            <img src="./assets/images/main-img.png" alt="Banner Image" class="mx-auto h-2/3 block w-full">
+                    <div class="w-full md:w-1/2 mt-6">
+                        <div class="img-sbox">
+                            <img src="./assets/images/main-img.png" alt="Banner Image" class="h-auto max-w-full">
                         </div>
                         <div class="banner-description">
-                            <p class="font-2 not-italic font-normal pr-6 md:pr-44 text-base md:text-lg leading-5 text-gray-800 my-6">
+                            <p class="font-2 not-italic font-normal hidden md:block pr-44 text-base md:text-lg leading-5 text-gray-800 my-6">
                                 All of our body art services are completely freehand, temporary, &amp; fun for everyone.
                             </p>
                         </div>
@@ -79,6 +95,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <!-- portfolio -->
         <main>
@@ -291,7 +309,7 @@
             <!-- second-article -->
             <section>
                 <div class="container mx-auto px-4">
-                    <div class=" mb-8 w-full  flex flex-wrap pt-16">
+                    <div class=" md:mb-8 w-full flex flex-wrap pt-16">
                         <div class=" w-full self-end md:w-1/2 lg:w-1/4 ">
                             <div class="artical-second">
                                 <img src="./assets/images/artical-2-img.png" alt="art">
@@ -624,312 +642,309 @@
             </section>
             <!--location-section -->
             <section>
-                <div class="pt-28">
-                    <div class="container mx-auto">
-                        <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Location</h1>
+                <div class="container mx-auto pr-2 pt-20">
+                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 mb-10">Location</h1>
+                </div>
+
+                <div class="container-fluid flex">
+                    <div class="half-space w-1/2">
+                        <div class="list ml-auto" style="width: 600px;">
+                            <ul>
+                                <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                    Keep It Simple in Waikiki
+                                    <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12 ">
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">227 Lewers St R-103Honolulu, HI 96815United States</p>
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
+                                            This week's schedule:
+                                            <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">27th Friday 4-8pm</b>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                    Kaka'ako Farmer's Market
+                                    <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">
+                                            210 Ward Ave,Honolulu, HI 96814United States</p>
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col">
+                                            This week's schedule:
+                                            <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2"> Saturday
+                    8am-12pm</b>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
+                                    Beachside Luxe in 'Alohilani
+                                    <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 ">The Shops at ‘Alohilani Resort Waikiki Beach2490 Kalākaua Ave, Honolulu HI 96815 United States​</p>
+                                        <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
+                                            This week's schedule:
+                                            <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">Sunday 12-4pm</b>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
-
-                    <div class="flex">
-                        <div class="container mx-auto">
-                            <div class="w-4/5 ml-auto ">
-                                <div class="list pl-5">
-                                    <ul>
-                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                                            Keep It Simple in Waikiki
-                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12 ">
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">227 Lewers St R-103Honolulu, HI 96815United States</p>
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
-                                                    This week's schedule:
-                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">27th Friday 4-8pm</b>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                                            Kaka'ako Farmer's Market
-                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2  ">
-                                                    210 Ward Ave,Honolulu, HI 96814United States</p>
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col">
-                                                    This week's schedule:
-                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2"> Saturday
-                            8am-12pm</b>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li class="circle-after not-italic font-normal text-gray-800 text-4xl font-1 pt-16 pl-8">
-                                            Beachside Luxe in 'Alohilani
-                                            <div class="flex flex-col pt-6 gap-8 w-1/2 ml-auto pr-12">
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 ">The Shops at ‘Alohilani Resort Waikiki Beach2490 Kalākaua Ave, Honolulu HI 96815 United States​</p>
-                                                <p class="not-italic font-normal text-base leading-5 text-gray-800 font-2 flex flex-col ">
-                                                    This week's schedule:
-                                                    <b class="not-italic font-semibold text-xl leading-6 text-gray-800 font-2">Sunday 12-4pm</b>
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                    <div class="right-full w-1/2">
+                        <div class="img-boxe">
+                            <img src="./assets/images/location-img.png" alt="location-img" class="w-full">
                         </div>
 
-                        <div class="w-1/2">
-                            <div class="img-boxe">
-                                <img src="./assets/images/location-img.png" alt="location-img" class="w-full">
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </section>
-            <!-- faqs secttion -->
-            <section id="faqs">
 
-                <div class="pt-20">
-                    <div class="mb-8 flex w-full flex-wrap pt-10 py-20">
-                        <div class="qa-div w-1/3 flex flex-row  bg-grey justify-center">
+            <!-- faqs secttion -->
+
+            <section id="faqs">
+                <div class="container-fluid flex flex-col p-0 md:flex-row pt-20">
+                    <div class="left-faq w-full  md:w-1/3 ">
+                        <div class="center-text ml-auto" style="width: 320px;">
                             <h1 class="not-italic font-normal text-6xl text-gray-800 font-1 pt-6">
                                 Q&A
                             </h1>
                         </div>
-                        <div class="w-2/3 relative  ">
-
-                            <div class="faq-main-div">
-                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px;">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    What is Henna?
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Henna is a term used for a paste made from the leaves of the hennaplant, or Lawsonia inermis.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Our recipe is simply the ground henna leafpowder mixed with lemon juice, essential oils (cajeput, lavender, eucalyptus, tea tree), and sugar.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Ancient uses of henna include anti-fungal properties for medical use, skin, hair, leather, and fabric dye, beautification, and ceremonial use, many of which are still in practicetoday.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Henna is not recommended for those with G6PD, a hereditarydeficiency.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Please inform your artist if you are pregnant. We offer maternal henna, our lavender essential oil only blend. This blend is the most gentle andalso recommended for chemotherapy patients or those with sensitive skin.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    PSA: Black “henna” warning: Without paying attention it can be easy toget natural henna mixed up with the chemical slurry that’s called “black henna”. Please avoid the artificial shelf stable cones, they canbe full of toxic preservatives, hair dye (PPD),
-                                                    and other ingredients thatcould potentially cause toxic poisoning or chemical burns.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    How to be safe: Ask your henna artist exactly what the ingredient listis, including essential oils, and what color the stain will be. Naturalhenna starts as orange and takes 2-3 days to oxidizae into a red browncolor.
-                                                </p>
-                                            </div>
+                    </div>
+                    <div class="right-faq w-full  md:w-2/3 relative">
+                        <div class="faq-main-div">
+                            <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px;">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                What is Henna?
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Want the tattoo look? Meet Jagua!
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Jagua is a fruit, Genipa Americana, from South America which stainsthe skin a navy black color. Native groups have been using this fruit forbeautification and medicinal use.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-
-                                                    Jagua, a distant relative to the kiwi, is picked prematurely and juiced. With water consistency, it is then thickened to a gel with food gradexanthan gum and a touch of lavender essential oil to make our jaguagel.
-
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Allergy notice: Although jagua is a fruit based dye, those with kiwiallergies or skin conditions such as psoriasis, eczema, or generallysensitive skin may get a reaction or flare up due to its acidity
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Aftercare: Both henna and jagua
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    The paste or gel will take ~1 hour to dry and set, during this time becareful to avoid contact of any kind to prevent smearing. Even afterfixing, the smear may still appear.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Both stains darkest towards the hands and feet and lightest towardsthe center of the body, depending on the thickness of your skin.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Designs take 2 days to darken and typically last 1-2 weeks dependingon lifestyle, skin type, and aftercare.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Henna Aftercare
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Once the paste has dried do not pick off your design. Leave it on for 4-6 hours minimum, longer the better. Henna will crack and flake off onits own, this is normal and will reveal a bright orange color.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Avoidwetting the area for the first 12 hours and remove any left over pastewith oil. The orange stain will oxidize and darken to a red brown colorover the next 2-3 days.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Moisturize regularly to extend the life of your design. Avoid exfoliation, harsh soaps, hot tubs, and pools, these will all shorten the life of yourdesign.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Jagua Aftercare
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Once the gel has set, avoid friction directly over the design as it maytransfer or shift. Leave it on for 2-3 hours minimum, longer the better.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Do not sleep or swim with your design.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Before sleeping or swimming, use soap and water, lather and wash thegel off thoroughly. Once squeaky clean, give the area and surroundingarea, wherever water dripped down and the hand you used to wash it afinal rinse to make sure no shadows appear.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    The design will be invisibleat first but will slowly oxidize and darken over the next 24-48 hours.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    White henna glam
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Henna glam is a non-staining, water resistant, latex free, quick drying, ready to wear body paint adhesive that typically lasts 1-3 days and can.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
-                                                    Perfect for events, festivals, or photoshoots, henna glam is made of body-safe FDA compliant ingredients.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    What's the price?
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pr-40">
-                                                    All appointments require a simple agreement form and a 50% depositfulfilled to secure the artist and reserve the date.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Both rates have a 2hour minimum and have a $50 travel fee.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Private mobile appointment
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    $125 an hourIncludes chairs and kit for mobile henna artistry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
-                                    <div class="accordion">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
-                                                <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
-                                                    Henna Party Rate
-                                                </h1>
-                                                <span class="arrow">
-                          <i class="icon-long-down-arrow" aria-hidden="true"></i>
-                        </span>
-                                            </div>
-                                            <div class="accordion-content border-0">
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    $150 an hour.
-                                                </p>
-                                                <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
-                                                    Recommended for more of a party presence. Includes chairs forartistry, small side table with cloth and mini umbrella decor, standing sign, optional glitter gel accents and aftercare sheets for each guest totake home so they know how to take care of their
-                                                    new design.
-                                                </p>
-                                            </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Henna is a term used for a paste made from the leaves of the hennaplant, or Lawsonia inermis.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Our recipe is simply the ground henna leafpowder mixed with lemon juice, essential oils (cajeput, lavender, eucalyptus, tea tree), and sugar.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Ancient uses of henna include anti-fungal properties for medical use, skin, hair, leather, and fabric dye, beautification, and ceremonial use, many of which are still in practicetoday.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Henna is not recommended for those with G6PD, a hereditarydeficiency.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Please inform your artist if you are pregnant. We offer maternal henna, our lavender essential oil only blend. This blend is the most gentle andalso recommended for chemotherapy patients or those with sensitive skin.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                PSA: Black “henna” warning: Without paying attention it can be easy toget natural henna mixed up with the chemical slurry that’s called “black henna”. Please avoid the artificial shelf stable cones, they canbe full of toxic preservatives, hair dye (PPD),
+                                                and other ingredients thatcould potentially cause toxic poisoning or chemical burns.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                How to be safe: Ask your henna artist exactly what the ingredient listis, including essential oils, and what color the stain will be. Naturalhenna starts as orange and takes 2-3 days to oxidizae into a red browncolor.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Want the tattoo look? Meet Jagua!
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Jagua is a fruit, Genipa Americana, from South America which stainsthe skin a navy black color. Native groups have been using this fruit forbeautification and medicinal use.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
 
+                                                Jagua, a distant relative to the kiwi, is picked prematurely and juiced. With water consistency, it is then thickened to a gel with food gradexanthan gum and a touch of lavender essential oil to make our jaguagel.
+
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Allergy notice: Although jagua is a fruit based dye, those with kiwiallergies or skin conditions such as psoriasis, eczema, or generallysensitive skin may get a reaction or flare up due to its acidity
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Aftercare: Both henna and jagua
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                The paste or gel will take ~1 hour to dry and set, during this time becareful to avoid contact of any kind to prevent smearing. Even afterfixing, the smear may still appear.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Both stains darkest towards the hands and feet and lightest towardsthe center of the body, depending on the thickness of your skin.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Designs take 2 days to darken and typically last 1-2 weeks dependingon lifestyle, skin type, and aftercare.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Henna Aftercare
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Once the paste has dried do not pick off your design. Leave it on for 4-6 hours minimum, longer the better. Henna will crack and flake off onits own, this is normal and will reveal a bright orange color.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Avoidwetting the area for the first 12 hours and remove any left over pastewith oil. The orange stain will oxidize and darken to a red brown colorover the next 2-3 days.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Moisturize regularly to extend the life of your design. Avoid exfoliation, harsh soaps, hot tubs, and pools, these will all shorten the life of yourdesign.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px;">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Jagua Aftercare
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Once the gel has set, avoid friction directly over the design as it maytransfer or shift. Leave it on for 2-3 hours minimum, longer the better.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Do not sleep or swim with your design.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Before sleeping or swimming, use soap and water, lather and wash thegel off thoroughly. Once squeaky clean, give the area and surroundingarea, wherever water dripped down and the hand you used to wash it afinal rinse to make sure no shadows appear.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                The design will be invisibleat first but will slowly oxidize and darken over the next 24-48 hours.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                White henna glam
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Henna glam is a non-staining, water resistant, latex free, quick drying, ready to wear body paint adhesive that typically lasts 1-3 days and can.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pt-6">
+                                                Perfect for events, festivals, or photoshoots, henna glam is made of body-safe FDA compliant ingredients.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 18px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                What's the price?
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800 pr-40">
+                                                All appointments require a simple agreement form and a 50% depositfulfilled to secure the artist and reserve the date.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Both rates have a 2hour minimum and have a $50 travel fee.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Private mobile appointment
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                $125 an hourIncludes chairs and kit for mobile henna artistry.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="accordion" class="relative" style="padding: 10px 0px 10px 5px; ">
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header bg-white cursor-pointer relative flex justify-between items-center pr-40">
+                                            <h1 class="accord-head font-1 not-italic font-normal text-gray-800 ">
+                                                Henna Party Rate
+                                            </h1>
+                                            <span class="arrow">
+                      <i class="icon-long-down-arrow" aria-hidden="true"></i>
+                    </span>
+                                        </div>
+                                        <div class="accordion-content border-0">
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                $150 an hour.
+                                            </p>
+                                            <p class="font-2  not-italic font-normal text-base leading-5 text-gray-800">
+                                                Recommended for more of a party presence. Includes chairs forartistry, small side table with cloth and mini umbrella decor, standing sign, optional glitter gel accents and aftercare sheets for each guest totake home so they know how to take care of their
+                                                new design.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
+
             </section>
+
         </main>
 
 

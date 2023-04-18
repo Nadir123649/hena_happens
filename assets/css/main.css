@@ -93,6 +93,10 @@ html {
     width: 1200px !important;
 }
 
+.container-fluid {
+    width: 100% !important;
+}
+
 .font-1 {
     font-family: 'Cinzel', serif;
 }
@@ -102,7 +106,7 @@ html {
 }
 
 .font-3 {
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant SC', serif;
 }
 
 .font-4 {
@@ -509,4 +513,75 @@ select {
     background-position: right 0.7em top 50%;
     background-size: auto;
     padding-right: 2.5em;
+}
+
+.worked-header {
+    position: relative;
+}
+
+.worked-header:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(-167.5px + 50%);
+    /* set the left value to position the image in the center of the cursor */
+    top: calc(-126px + 50%);
+    /* set the top value to position the image directly below the cursor */
+    width: 335px;
+    height: 172px;
+    background-image: url("../images/worked-header-img-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.worked-header:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(-167.5px + 50%);
+    /* set the left value to position the image in the center of the cursor */
+    top: calc(-86px + 50%);
+    /* set the top value to position the image directly below the cursor */
+    width: 335px;
+    height: 172px;
+    background-image: url("../images/worked-header-img-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.worked-header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(-167.5px + 50%);
+    /* set the left value to position the image in the center of the cursor */
+    top: calc(-86px + 50%);
+    /* set the top value to position the image directly below the cursor */
+    width: 335px;
+    height: 172px;
+    background-image: url("../images/worked-header-img-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(0);
+}
+
+@media screen and (max-width: 768px) {
+    .top-footer>div:nth-child(1),
+    .top-footer>div:nth-child(2),
+    .top-footer>div:nth-child(3) {
+        width: 100%;
+    }
 }

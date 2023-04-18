@@ -1,6 +1,7 @@
 $('.testominal-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    Infinity: false,
     dots: false,
     arrows: true,
     fade: true,
@@ -27,12 +28,13 @@ $('.testominal-slider').slick({
     ]
 });
 
-//   sliders
+//   sliderss
 $(document).ready(function() {
     $('.portfolio-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        Infinity: false,
         fade: true,
         asNavFor: '.slick-carousel'
     });

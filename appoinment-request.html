@@ -53,48 +53,43 @@
         <!-- main -->
         <main>
             <section>
-                <div class="container mx-auto pt-36 pb-44">
-                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 ">
+                <div class="container mx-auto pt-36 md:pb-44 pb-6 ">
+                    <h1 class="font-1 not-italic font-normal text-3xl md:text-6xl text-gray-800 md:mb-14 mb-8">
                         Appointment Request
                     </h1>
                     <div class="container mx-auto">
                         <!-- form-appoinment -->
-                        <div class="form-appoinment w-full flex flex-row gap-12">
-                            <div class="left-form w-1/2">
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
-                                        First Name
-                                    </label>
-                                    <input class=" border-grey-1 mt-5 h-12 font-2  bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="First">
-                                </div>
+                        <div class="form-appoinment p-0 m-0 flex flex-col md:flex-row gap-12">
+                            <div class="md:w-1/2 w-full md:mb-14 md:8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
+                                    First Name
+                                </label>
+                                <input class=" border-grey-1 mt-2 inline-block md:mt-5 h-12 font-2 bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="First">
                             </div>
-                            <div class="right-form w-1/2">
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
-                                        Last Name
-                                    </label>
-                                    <input class=" border-grey-1 mt-5 h-12 font-2   bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Last">
-                                </div>
-
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="name">
+                                    Last Name
+                                </label>
+                                <input class=" border-grey-1 mt-5 h-12 font-2   bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Last">
                             </div>
                         </div>
                         <!-- appoinment-email-full -->
-                        <div class="appoinment-amail w-1/2">
-                            <div class="my-8">
+                        <div class="appoinment-amail md:w-1/2 w-full">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
                                 <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="email">
                                     Email
                                 </label>
                                 <input class=" border-grey-1 mt-5 h-12 font-2  bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Enter Your Email">
                             </div>
 
-                            <div class="my-8">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
                                 <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="Phone">
                                     Phone
                                 </label>
                                 <input class=" border-grey-1 mt-5 h-12 font-2   bg-white border-dark-grey w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter Your Phone Number">
                             </div>
 
-                            <div class="my-8">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
                                 <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="contact-method">
                                   Preferred Method of Contact
                                 </label>
@@ -119,116 +114,106 @@
                             </div>
                         </div>
                         <!-- appoinment-time -->
-                        <div class="appoinment-time w-full flex flex-row gap-12">
-                            <div class="left-form w-1/2">
+                        <div class="appoinment-time w-full flex flex-col md:flex-row  md:gap-12 gap-4">
 
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
+                            <div class="md:w-1/2 w-full md:mb-14 md-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
                                       Appointment Date
                                     </label>
-                                    <div class="relative">
-                                        <input class="block w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" id="appointment-date" type="date" placeholder="MM/DD/YYYY" onblur="(this.type='text')" min="2023-04-15" max="2024-04-15">
-                                    </div>
+                                <div class="relative">
+                                    <input class="block w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" id="appointment-date" type="date" placeholder="MM/DD/YYYY" onblur="(this.type='text')" min="2023-04-15" max="2024-04-15">
                                 </div>
-
-
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="contact-method">
-                                        Appointment Location
-                                    </label>
-                                    <div class="flex items-center mt-7">
-                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
-                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
-                                            Private Residency
-                                      </label>
-                                    </div>
-                                    <div class="flex items-center mt-5">
-                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
-                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
-                                            Hotel or Venue
-                                      </label>
-                                    </div>
-                                    <div class="flex items-center mt-5">
-                                        <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
-                                        <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
-                                            Other
-                                      </label>
-                                    </div>
-                                </div>
-
-
-
-
                             </div>
-                            <div class="right-form w-1/2">
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
+
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-date">
                                       Appointment Time
                                     </label>
-                                    <div class="relative flex gap-5">
-                                        <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="HH" type="text" name="month" id="month">
-                                        <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="MM" type="text" for="day" name="day" id="day">
-                                        <select class="w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2 appearance-none focus:outline-none focus:shadow-outline" name="ampm" id="ampm">
+                                <div class="relative flex gap-5">
+                                    <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="HH" type="text" name="month" id="month">
+                                    <input class=" w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2  appearance-none focus:outline-none focus:shadow-outline" placeholder="MM" type="text" for="day" name="day" id="day">
+                                    <select class="w-full py-2 px-3 leading-tight border-grey-1 mt-5 h-12 font-2 appearance-none focus:outline-none focus:shadow-outline" name="ampm" id="ampm">
                                             <option value="am">AM</option>
                                             <option value="pm">PM</option>
                                           </select>
-                                    </div>
                                 </div>
-
                             </div>
+                        </div>
+                        <!-- appoinment-checkbox 2 -->
+                        <div class="appoinment-check-box w-full">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="contact-method">
+                                    Appointment Location
+                                </label>
+                                <div class="flex items-center mt-7">
+                                    <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                    <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                        Private Residency
+                                  </label>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                    <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                        Hotel or Venue
+                                  </label>
+                                </div>
+                                <div class="flex items-center mt-5">
+                                    <input class="mr-1 leading-tight w-4 h-4" type="checkbox" id="contact-method" name="contact-method">
+                                    <label class="not-italic font-normal text-base leading-5 text-gray-900 font-2" for="contact-method">
+                                        Other
+                                  </label>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- appoinment-for-colors -->
 
-                        <div class="appoinment-colors w-full flex flex-row gap-12">
-                            <div class="left-form w-1/2">
+                        <div class="appoinment-colors w-full flex flex-col md:flex-row md:gap-12 gap-4">
 
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
                                       Color (Prices vary)
                                     </label>
-                                    <div class="relative">
-                                        <select class="block appearance-none w-full border-grey-1 py-2 font-2 px-3 leading-tight text-gray-700 mt-5 h-12 bg-white focus:outline-none focus:shadow-outline" id="color" name="color">
+                                <div class="relative">
+                                    <select class="block appearance-none w-full border-grey-1 py-2 font-2 px-3 leading-tight text-gray-700 mt-5 h-12 bg-white focus:outline-none focus:shadow-outline" id="color" name="color">
                                             <option value="Henna (Brown/Red)">Henna (Brown/Red)</option>
                                             <option value="Black">Black</option>
                                             <option value="Blonde">Blonde</option>
                                             <option value="Brunette">Brunette</option>
                                             <option value="Other">Other</option>
                                           </select>
-                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
                                               <path d="M6 9l6 6 6-6"/>
                                             </svg>
-                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="right-form w-1/2">
 
-                                <div class="my-8">
-                                    <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
+                            <div class="md:w-1/2 w-full md:mb-14 mb-8">
+                                <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="color">
                                         Appointment Type
                                     </label>
-                                    <div class="relative">
-                                        <select class="block appearance-none w-full font-2 border-grey-1 py-2 px-3 leading-tight text-gray-700  mt-5 h-12 bg-white  focus:outline-none focus:shadow-outline" id="color" name="color">
+                                <div class="relative">
+                                    <select class="block appearance-none w-full font-2 border-grey-1 py-2 px-3 leading-tight text-gray-700  mt-5 h-12 bg-white  focus:outline-none focus:shadow-outline" id="color" name="color">
                                             <option value="private-2hr">Private Appointment (2hr)</option>
                                             <option value="group-2hr">Group Appointment (2hr)</option>
                                             <option value="private-1hr">Private Appointment (1hr)</option>
                                             <option value="group-1hr">Group Appointment (1hr)</option>
                                         </select>
-                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue-svg">
                                               <path d="M6 9l6 6 6-6"/>
                                             </svg>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <!-- appoinment-textarea -->
 
                         <div class="appoinment-textarea w-full">
-                            <div class="my-8">
+                            <div class="md:w-full w-full md:mb-14 mb-8">
                                 <label class="block not-italic font-normal text-base leading-5 text-gray-800 font-2" for="appointment-details">
                                   Appointment Details
                                 </label>
@@ -238,7 +223,7 @@
                         <!-- appoinment-button -->
 
                         <div class="appoinment-submit w-full">
-                            <div class="submit-div flex justify-end mt-16">
+                            <div class="submit-div block md:flex justify-end mt-16 md:mb-14 mb-8">
                                 <a href="#" class="bg-black font-2 not-italic border-black font-normal text-base text-white py-4 px-64
                                 hover:bg-transparent hover:text-black
                              hover:border-black
@@ -259,38 +244,39 @@
                 <h1 class="not-italic font-normal text-2xl leading-8 text-gray-800 font-1 text-center ">Henna Happens</h1>
             </div>
             <div class="container mx-auto pt-14">
-                <div class="top-footer flex flex-col md:flex-row">
-                    <div class="col md:w-1/2">
-                        <div class="text-footer pr-0 md:pr-36">
-                            <h1 class="text-4xl not-italic font-normal text-gray-800 font-1 ">
+                <div class="top-footer flex flex-col md:flex-row w-full">
+                    <div class="col md:w-1/2 ">
+                        <div class="text-footer md:pr-36 pr-0">
+                            <h1 class="md:text-4xl text-xl not-italic font-normal text-gray-800 font-1 ">
                                 Are you ready to book an appointment with the artist?
                             </h1>
-                            <a class="mt-8 font-2 border-black bg-black hover:bg-transparent hover:text-black
-                             hover:border-black font-normal text-base text-white bg-transparent py-4 px-18 md:px-20 inline-block mb-4 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
+                            <a class="mt-8 font-2 border-black bg-black hover:bg-transparent hover:text-black text-center
+                             hover:border-black font-normal text-base text-white bg-transparent py-4 px-18 md:px-20 w-full inline-block md:mb-4 mb-8 md:mb-0 transition duration-500 ease-in-out" href="#">Book Now</a>
                         </div>
                     </div>
                     <div class="col md:w-1/4">
                         <div class="items-footer">
-                            <ul>
+                            <ul class="md:block
+                             flex justify-between w-full">
                                 <li>
                                     <ul>
-                                        <li class="p-1"> <a href="./about.html" class="font-2 not-italic font-normal text-base leading-5 text-black">About</a></li>
-                                        <li class="p-1"> <a href="./portfolio.html" class="font-2 not-italic font-normal text-base leading-5 text-black">Portfolio</a>
+                                        <li class="md:p-1 pb-5"> <a href="./about.html" class="font-2 not-italic font-normal text-base leading-5 text-black">About</a></li>
+                                        <li class="md:p-1 pb-5"> <a href="./portfolio.html" class="font-2 not-italic font-normal text-base leading-5 text-black">Portfolio</a>
                                         </li>
-                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Services</a></li>
+                                        <li class="md:p-1 pb-5"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Services</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <ul>
-                                        <li class="p-1"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Location</a></li>
-                                        <li class="p-1"> <a href="./events.html" class="font-2 not-italic font-normal text-base leading-5 text-black">Events</a></li>
-                                        <li class="p-1"> <a href="./faq.html" class="font-2 not-italic font-normal text-base leading-5 text-black">FAQ</a></li>
+                                    <ul class="md:text-left text-right">
+                                        <li class="md:p-1 pb-5"> <a href="" class="font-2 not-italic font-normal text-base leading-5 text-black">Location</a></li>
+                                        <li class="md:p-1 pb-5"> <a href="./events.html" class="font-2 not-italic font-normal text-base leading-5 text-black">Events</a></li>
+                                        <li class="md:p-1 pb-5"> <a href="./faq.html" class="font-2 not-italic font-normal text-base leading-5 text-black">FAQ</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col md:w-1/4">
+                    <div class="col md:w-1/4 md">
                         <div class="footer-address flex flex-col gap-3 mt-3">
                             <span class="font-2 not-italic font-medium text-base leading-5 text-right text-black">tel. (425)
                   387-8307</span>
@@ -312,8 +298,8 @@
                     </div>
                 </div>
 
-                <div class="footer-bottom py-10 mt-3 ">
-                    <p class="font-2 grey-color not-italic font-normal text-base leading-5 hover:text-black">Privacy Policy</p>
+                <div class="footer-bottom md:py-10 py-0 mt-3 ">
+                    <p class="font-2 grey-color not-italic font-normal text-base leading-5 md:block hidden  hover:text-black">Privacy Policy</p>
                 </div>
             </div>
         </footer>
