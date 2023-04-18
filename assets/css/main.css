@@ -600,4 +600,10 @@ select {
     .img-box-small {
         width: 100%;
     }
+    .circle-after::after {
+        content: '';
+        position: absolute;
+        top: 21%;
+        left: 15px;
+    }
 }
