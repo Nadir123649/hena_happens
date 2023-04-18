@@ -606,4 +606,10 @@ select {
         top: 21%;
         left: 15px;
     }
+    .circle-small::after {
+        content: '';
+        position: absolute;
+        top: 24%;
+        left: 15px;
+    }
 }
