@@ -619,4 +619,7 @@ select {
         background-image: url("../images/star-img.png") !important;
         background-size: cover;
     }
+    .kaira-div {
+        height: auto !important;
+    }
 }
