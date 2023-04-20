@@ -629,4 +629,12 @@ select {
         font-size: 70px;
         left: -8px;
     }
+    .slick-prev {
+        left: -5px;
+        top: 115%;
+    }
+    .slick-next {
+        left: 229px;
+        top: 115%;
+    }
 }
