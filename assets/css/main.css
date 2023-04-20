@@ -637,4 +637,23 @@ select {
         left: 229px;
         top: 115%;
     }
+    .main-relative {
+        height: auto !important;
+    }
+    .profeshional-list {
+        width: 100% !important;
+    }
+    .circle-after::after {
+        content: '';
+        position: absolute;
+        top: 18%;
+        left: 0;
+    }
+    .circle-small::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        left: 0;
+    }
 }
