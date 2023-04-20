@@ -20,9 +20,9 @@
 <body>
     <div class="wrapper-div">
 
-        <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
+        <!-- <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
             <nav class="flex justify-between items-center container mx-auto relative py-8">
-                <!-- Left menu -->
+
                 <ul class="flex items-center md:flex space-x-8">
                     <li>
                         <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
@@ -32,9 +32,8 @@
                     </li>
                 </ul>
 
-                <!-- Logo -->
-                <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
-                <!-- Right menu -->
+                 <a class="font-1 not-italic font-normal text-3xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
+
 
                 <ul class="flex items-center  md:flex space-x-8">
                     <li>
@@ -49,25 +48,25 @@
                 </ul>
 
             </nav>
-        </header>
+        </header> -->
         <!-- main -->
         <main>
             <section>
-                <div class="container mx-auto pt-36">
-                    <h1 class="font-1 not-italic font-normal text-6xl text-gray-800 ">
+                <div class="container mx-auto md:pt-36 pt-12 md:px-0 px-5">
+                    <h1 class="font-1 not-italic font-normal text-3xl md:text-6xl text-gray-800 ">
                         Upcoming Public Events
                     </h1>
-                    <div class="main-card-section w-full flex pt-5 pb-36">
-                        <div class="left-card-div w-1/2 p-5">
+                    <div class="main-card-section w-full flex flex-col md:flex-row pt-5 md:pb-36 pb-20">
+                        <div class="left-card-div md:w-1/2 w-full md:p-5 p-0">
                             <div class="card-img-content shadow-lg">
                                 <div class="img-top relative">
                                     <img src="./assets/images/img-card-1.png" alt="img-card">
-                                    <div class="upper-content absolute bottom-7 left-7">
+                                    <div class="upper-content absolute md:bottom-7 bottom-2 md:left-7 left-3">
                                         <p class="font-2 not-italic font-semibold text-xl leading-6 text-white">Bishop Museum After Hours</p>
                                     </div>
                                 </div>
                                 <div class="content-card bg-white">
-                                    <div class="first-content flex justify-between px-6 pt-8">
+                                    <div class="first-content flex flex-col gap-3 md:flex-row  justify-between px-6 md:pt-8 pt-4">
                                         <p class="font-2 not-italic font-normal text-base leading-5 grey-dark">
                                             <i class="fa fa-calendar-o  pr-2" aria-hidden="true"></i> Monday, January 23, 2023
                                         </p>
@@ -75,10 +74,10 @@
                                             <i class="fa fa-clock-o  pr-2" aria-hidden="true"></i> 4:00PM - 10:00PM
                                         </p>
                                     </div>
-                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark pt-5 pl-6">
+                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark md:pt-5 pt-3 pl-6">
                                         <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>1525 Bernice St Honolulu, HI 96817 United States
                                     </p>
-                                    <div class="inline-button flex justify-between px-7 py-8">
+                                    <div class="inline-button text-center flex flex-col  md:flex-row  justify-between w-full px-7 md:py-8 py-4">
                                         <a href="" class="not-italic font-normal text-base font-2 grey-dark py-4 px-16 bg-white border-1
                                         hover:bg-black hover:text-white hover:border-black  px-18 md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
                                         ">Learn More</a>
@@ -89,15 +88,15 @@
                                 </div>
                             </div>
 
-                            <div class="card-img-content shadow-lg  mt-10">
+                            <div class="card-img-content shadow-lg mt-10">
                                 <div class="img-top relative">
-                                    <img src="./assets/images/img-card-3.png" alt="img-card">
-                                    <div class="upper-content absolute bottom-7 left-7">
+                                    <img src="./assets/images/img-card-3.png" alt="img-card" class="md:w-full w-full h-auto">
+                                    <div class="upper-content absolute md:bottom-7 bottom-2 md:left-7 left-3">
                                         <p class="font-2 not-italic font-semibold text-xl leading-6 text-white">FarmLovers Family Fun Fest</p>
                                     </div>
                                 </div>
                                 <div class="content-card bg-white">
-                                    <div class="first-content flex justify-between px-6 pt-8">
+                                    <div class="first-content flex flex-col gap-3 md:flex-row  justify-between px-6 md:pt-8 pt-4">
                                         <p class="font-2 not-italic font-normal text-base leading-5 grey-dark">
                                             <i class="fa fa-calendar-o  pr-2" aria-hidden="true"></i> Friday, February 17, 2023
                                         </p>
@@ -105,10 +104,10 @@
                                             <i class="fa fa-clock-o  pr-2" aria-hidden="true"></i>4:00PM - 10:00PM
                                         </p>
                                     </div>
-                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark pt-5 pl-6">
+                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark md:pt-5 pt-3 pl-6">
                                         <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>1011 Ala Moana Blvd Honolulu, HI 96814 United States
                                     </p>
-                                    <div class="inline-button flex justify-between px-7 py-8">
+                                    <div class="inline-button text-center flex flex-col  md:flex-row  justify-between w-full px-7 md:py-8 py-4">
                                         <a href="" class="not-italic font-normal text-base font-2 grey-dark py-4 px-16 bg-white border-1
                                         hover:bg-black hover:text-white hover:border-black  px-18 md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
                                         ">Learn More</a>
@@ -120,16 +119,16 @@
                             </div>
 
                         </div>
-                        <div class="right-card-div w-1/2 p-5">
+                        <div class="right-card-div md:w-1/2 w-full md:p-5 p-0 md:pt-0 pt-10">
                             <div class="card-img-content shadow-lg ">
                                 <div class="img-top relative">
                                     <img src="./assets/images/img-card-2.png" alt="img-card">
-                                    <div class="upper-content absolute bottom-7 left-7">
+                                    <div class="upper-content absolute md:bottom-7 bottom-2 md:left-7 left-3">
                                         <p class="font-2 not-italic font-semibold text-xl leading-6 text-white">Holistic & Wellness Market</p>
                                     </div>
                                 </div>
                                 <div class="content-card bg-white">
-                                    <div class="first-content flex justify-between px-6 pt-8">
+                                    <div class="first-content flex flex-col gap-3 md:flex-row  justify-between px-6 md:pt-8 pt-4">
                                         <p class="font-2 not-italic font-normal text-base leading-5 grey-dark">
                                             <i class="fa fa-calendar-o  pr-2" aria-hidden="true"></i> Saturday, February 11, 2023
                                         </p>
@@ -137,10 +136,10 @@
                                             <i class="fa fa-clock-o  pr-2" aria-hidden="true"></i> 4:00PM - 8:00PM
                                         </p>
                                     </div>
-                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark pt-5 pl-6">
+                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark md:pt-5 pt-3 pl-6">
                                         <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>315 uluniu st kailua, hi, 96734
                                     </p>
-                                    <div class="inline-button flex justify-between px-7 py-8">
+                                    <div class="inline-button text-center flex flex-col  md:flex-row  justify-between w-full px-7 md:py-8 py-4">
                                         <a href="" class="not-italic font-normal text-base font-2 grey-dark py-4 px-16 bg-white border-1
                                         hover:bg-black hover:text-white hover:border-black  px-18 md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
                                         ">Learn More</a>
@@ -150,15 +149,16 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card-img-content  shadow-lg mt-10">
                                 <div class="img-top relative">
                                     <img src="./assets/images/img-card-4.png" alt="img-card">
-                                    <div class="upper-content absolute bottom-7 left-7">
+                                    <div class="upper-content absolute md:bottom-7 bottom-2 md:left-7 left-3">
                                         <p class="font-2 not-italic font-semibold text-xl leading-6 text-white">Honolulu Night Market at Our Kaka'ako</p>
                                     </div>
                                 </div>
                                 <div class="content-card bg-white">
-                                    <div class="first-content flex justify-between px-6 pt-8">
+                                    <div class="first-content flex flex-col gap-3 md:flex-row  justify-between px-6 md:pt-8 pt-4">
                                         <p class="font-2 not-italic font-normal text-base leading-5 grey-dark">
                                             <i class="fa fa-calendar-o  pr-2" aria-hidden="true"></i> Saturday, November 19, 2022
                                         </p>
@@ -166,10 +166,10 @@
                                             <i class="fa fa-clock-o  pr-2" aria-hidden="true"></i> 4:00PM - 8:00PM
                                         </p>
                                     </div>
-                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark pt-5 pl-6">
+                                    <p class="font-2 not-italic font-normal text-base leading-5 grey-dark md:pt-5 pt-3 pl-6">
                                         <i class="fa fa-map-marker pr-3" aria-hidden="true"></i>Our Kakaako 660 Ala Moana Boulevard Honolulu, HI 96813
                                     </p>
-                                    <div class="inline-button flex justify-between px-7 py-8">
+                                    <div class="inline-button text-center flex flex-col  md:flex-row  justify-between w-full px-7 md:py-8 py-4">
                                         <a href="" class="not-italic font-normal text-base font-2 grey-dark py-4 px-16 bg-white border-1
                                         hover:bg-black hover:text-white hover:border-black  px-18 md: inline-block mb-4 md:mb-0 transition duration-500 ease-in-out
                                         ">Learn More</a>
