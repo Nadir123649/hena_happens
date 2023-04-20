@@ -622,4 +622,11 @@ select {
     .kaira-div {
         height: auto !important;
     }
+    .cooma-class::before {
+        content: '“';
+        position: absolute;
+        top: 0;
+        font-size: 70px;
+        left: -8px;
+    }
 }
