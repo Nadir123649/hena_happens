@@ -11,16 +11,16 @@ $('.testominal-slider').slick({
     responsive: [{
             breakpoint: 450,
             settings: {
-                dots: false,
-                slidesToShow: 3,
-                centerPadding: '0px',
+
+                slidesToShow: 1,
+
             }
         },
         {
             breakpoint: 420,
             settings: {
                 autoplay: true,
-                dots: false,
+
                 slidesToShow: 1,
                 centerMode: false,
             }

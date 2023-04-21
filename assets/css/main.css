@@ -660,4 +660,12 @@ select {
         border-radius: 50%;
         left: 0;
     }
+    .slick-carousel .slick-prev {
+        left: 0;
+        top: 118%;
+    }
+    .slick-carousel .slick-next {
+        left: 65%;
+        top: 118%;
+    }
 }
