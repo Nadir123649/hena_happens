@@ -27,18 +27,10 @@
 <body>
     <div class="wrapper-div relative">
 
-        <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
+        <!-- <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
             <div class="container mx-auto">
-                <div class="main-menu-div flex justify-between items-center py-5 px-5 md:hidden ">
-                    <div class="logo ">
-                        <a class="font-1 not-italic font-normal text-2xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
-                    </div>
-                    <div class="menu-btn">
-                        <img src="./assets/images/mobile-menu-icon.png" alt="mobile-icon">
-                    </div>
-                </div>
-
-                <nav class=" hidden md:flex flex-row justify-between items-center md:relative fixed py-8 top-0 left-0">
+              
+                <nav class="md:flex flex-row justify-between items-center md:relative fixed py-8 top-0 left-0">
 
                     <ul class="flex flex-col items-center  md:flex-row space-x-8">
                         <li>
@@ -50,7 +42,7 @@
                     </ul>
 
 
-                    <a class="font-1 not-italic hidden font-normal text-3xl leading-8 text-gray-800 capitalize md:block" href="./index.html">Henna Happens</a>
+                    <a class="font-1 not-italic block font-normal text-3xl leading-8 text-gray-800 capitalize md:block" href="./index.html">Henna Happens</a>
 
 
                     <ul class="flex flex-col items-center  md:flex-row space-x-8">
@@ -64,11 +56,97 @@
                             <a class="font-2 not-italic font-normal text-base leading-5 text-gray-800 hover:text-gray-500" href="#faqs">FAQ</a>
                         </li>
                     </ul>
+                    <ul class="menu-icon block md:hidden">
+                        <li><a href="https://www.yelp.com/"><i class="fa fa-yelp text-2xl" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/ "><i class="fa fa-instagram text-2xl "></i></a></li>
+                        <li><a href="https://www.youtube.com/ "><i class="fa fa-youtube-play text-2xl "></i></a></li>
+                    </ul>
 
 
                 </nav>
             </div>
+        </header> -->
+
+
+        <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
+            <div class="container mx-auto relative py-9 md:px-0 px-5">
+                <div class="header-nav flex flex-row justify-between">
+                    <div class="logo  block md:hidden">
+                        <a class=" font-1 not-italic font-normal text-2xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <button class="menu-btn md:hidden">
+                    <img src="./assets/images/mobile-menu-icon.png" alt="mobile-icon">
+                    </button>
+                </div>
+
+                <!-- Logo -->
+
+                <div class="logo absolute hidden md:block">
+                    <a class=" font-1 not-italic font-normal text-2xl leading-8 text-gray-800 capitalize" href="./index.html">Henna Happens</a>
+                </div>
+
+
+                <!-- Navigation menu -->
+                <nav class="w-full h-screen md:h-auto">
+                    <ul class="flex flex-col md:flex-row justify-between md:gap-8 gap-14 md:pt-0 pt-20">
+                        <li>
+                            <ul class="flex flex-col md:flex-row md:gap-8 gap-14">
+                                <li>
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="./about.html">about</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="./portfolio.html">portfolio</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="flex flex-col md:flex-row md:gap-8 gap-14">
+                                <li>
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="#">services</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="#location">location</a>
+                                </li>
+
+                                <li>
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="#faqs">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Social media icons -->
+                    <div class="">
+                        <ul class="menu-icon  flex justify-between items-center space-x-8 md:hidden">
+                            <li>
+                                <a href="https://www.yelp.com/">
+                                    <i class="fa fa-yelp text-4xl" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram text-4xl"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/">
+                                    <i class="fa fa-youtube-play text-4xl"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </nav>
+
+            </div>
         </header>
+
 
         <!-- banner section -->
         <div class="banner-section">

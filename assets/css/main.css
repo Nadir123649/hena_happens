@@ -160,6 +160,14 @@ html {
     left: 0;
 }
 
+
+/* header css */
+
+.logo {
+    left: 40%;
+    top: 35%;
+}
+
 .learn-more {
     border: 1px solid #383533;
     padding: 15px 89px;
@@ -670,5 +678,8 @@ select {
     .slick-carousel .slick-next {
         left: 65%;
         top: 118%;
+    }
+    .nav-item {
+        font-family: 'Cinzel', serif;
     }
 }
