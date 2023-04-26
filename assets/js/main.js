@@ -95,3 +95,12 @@ accordionItems.forEach(item => {
         }
     });
 });
+
+// header toogel code
+
+
+var menuBtn = document.querySelector('.menu-btn');
+var navMenu = document.querySelector('nav');
+menuBtn.addEventListener('click', function() {
+    navMenu.classList.toggle('nav-menu-open');
+});

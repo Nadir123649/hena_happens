@@ -679,7 +679,29 @@ select {
         left: 65%;
         top: 118%;
     }
+    .logo {
+        position: relative !important;
+        top: 0;
+        left: 0;
+    }
     .nav-item {
         font-family: 'Cinzel', serif;
+    }
+    .social-links {
+        bottom: 30px;
+        width: 90%;
+    }
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+        padding: 0px 20px;
+    }
+    .nav-menu-open {
+        left: 0;
     }
 }
