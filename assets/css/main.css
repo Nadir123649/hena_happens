@@ -497,6 +497,10 @@ html {
     width: 580px;
 }
 
+.list {
+    width: 702px !important;
+}
+
 .icon-corner-icon {
     font-size: 25px !important;
     font-weight: 100;
@@ -703,5 +707,8 @@ select {
     }
     .nav-menu-open {
         left: 0;
+    }
+    .list {
+        width: auto !important;
     }
 }
