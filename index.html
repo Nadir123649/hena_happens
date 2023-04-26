@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="wrapper-div">
+    <div class="wrapper-div relative">
 
         <header class="bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
             <div class="container mx-auto">
@@ -70,10 +70,9 @@
             </div>
         </header>
 
-
         <!-- banner section -->
         <div class="banner-section">
-            <div class="container mx-auto md:px-4 px-5  md:pt-28 pt-20 ">
+            <div class="container mx-auto md:px-4 px-5  md:pt-28 pt-16 ">
                 <div class="flex flex-col-reverse  md:flex-row flex-wrap justify-center -mx-5 ">
                     <div class="md:-mr-32 md:w-3/5 w-full relative  m-auto z-10 md:px-2 px-5 ">
                         <p class="font-2 p-right not-italic pr-0 md:pr-80 hidden md:block  font-normal text-base md:text-lg leading-5 text-gray-800 pb-5 ">
@@ -110,8 +109,10 @@
                     <div class="flex flex-col md:flex-row gap-1 md:pt-10 pt-5">
                         <div class="w-full md:w-1/2 md:mb-4 mb-0">
                             <div class="portfolio-slider mt-5">
-                                <div class="img-box">
-                                    <img src="./assets/images/portfolio-img-1.png" alt="Left Image" class="object-contain w-full h-auto">
+                                <div class="portfolio-img-txt relative">
+                                    <div class="img-box  md:h-3/6 h-96">
+                                        <img src="./assets/images/portfolio-img-1.png" alt="Left Image" class="h-full w-full object-cover">
+                                    </div>
                                     <div class="upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
                                         <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
                                             Aliqua id fugiat nostrud
@@ -119,22 +120,26 @@
                                         <p class="font-2 font-normal text-base leading-5 text-gray-800">01/02/2023</p>
                                     </div>
                                 </div>
-                                <div class="img-box">
-                                    <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="object-contain w-full h-auto">
-                                    <div class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
+                                <div class="portfolio-img-txt relative">
+                                    <div class="img-box   md:h-3/6 h-96">
+                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
                                         <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
                                             Aliqua id fugiat nostrud
                                         </p>
-                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                        <p class="font-2 font-normal text-base leading-5 text-gray-800">01/02/2023</p>
                                     </div>
                                 </div>
-                                <div class="img-box">
-                                    <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="object-contain w-full h-auto">
-                                    <div class="upper-content upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
+                                <div class="portfolio-img-txt relative">
+                                    <div class="img-box  md:h-3/6 h-96">
+                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="upper-content absolute top-0 w-full bg-white bg-opacity-60 backdrop-filter backdrop-brightness-150 p-2 md:p-3 md:pl-6 ">
                                         <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800 py-3">
                                             Aliqua id fugiat nostrud
                                         </p>
-                                        <p class="font-2 not-italic font-normal text-base leading-5 text-gray-800">01/02/2023</p>
+                                        <p class="font-2 font-normal text-base leading-5 text-gray-800">01/02/2023</p>
                                     </div>
                                 </div>
                             </div>
@@ -142,8 +147,8 @@
                         <div class="w-full md:px-2 px-0 md:w-1/2 ">
                             <div class="slick-carousel flex flex-wrap justify-center items-center relative">
                                 <div class="portfolio-card">
-                                    <div class="img-box relative  md:m-5 m-1">
-                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio ">
+                                    <div class="img-box relative  md:m-5 m-1  h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
@@ -153,8 +158,8 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-card">
-                                    <div class="img-box relative md:m-5 m-1 overflow-hidden">
-                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image">
+                                    <div class="img-box relative md:m-5 m-1 overflow-hidden h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
@@ -164,8 +169,8 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-card">
-                                    <div class="img-box relative md:m-5 m-1">
-                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image">
+                                    <div class="img-box relative md:m-5 m-1 h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
@@ -175,8 +180,8 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-card">
-                                    <div class="img-box relative md:m-5 m-1">
-                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio ">
+                                    <div class="img-box relative md:m-5 m-1 h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-1.png" alt="portfolio" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
@@ -186,8 +191,8 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-card">
-                                    <div class="img-box relative md:m-5 m-1">
-                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image">
+                                    <div class="img-box relative md:m-5 m-1 h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-2.png" alt="Left Image" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
@@ -197,8 +202,8 @@
                                     </div>
                                 </div>
                                 <div class="portfolio-card">
-                                    <div class="img-box relative md:m-5 m-1 ">
-                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image">
+                                    <div class="img-box relative md:m-5 m-1 h-64 md:h-80">
+                                        <img src="./assets/images/portfolio-img-3.png" alt="Left Image" class="h-full object-cover">
                                     </div>
                                     <div class="portfolio-description md:pl-5 pl-0">
                                         <p class="font-2 not-italic font-normal text-xs md:text-base leading-5 text-gray-800 py-3">
