@@ -511,6 +511,36 @@ html {
     border-bottom: 1px solid #cdcdcd;
 }
 
+.circle-after.lg-circle {
+    position: relative;
+}
+
+.circle-after.lg-circle::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #383533;
+    top: 27.5%;
+    border-radius: 50%;
+    left: 12px;
+}
+
+.circle-after.lg-circled {
+    position: relative;
+}
+
+.circle-after.lg-circled::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #383533;
+    top: 30%;
+    border-radius: 50%;
+    left: 12px;
+}
+
 
 /* appoinment request */
 
@@ -706,5 +736,25 @@ select {
     }
     .list {
         width: auto !important;
+    }
+    .circle-after.lg-circle::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #383533;
+        top: 20%;
+        border-radius: 50%;
+        left: 12px;
+    }
+    .circle-after.lg-circled::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #383533;
+        top: 24%;
+        border-radius: 50%;
+        left: 12px;
     }
 }
