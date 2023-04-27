@@ -691,10 +691,6 @@ select {
     .nav-item {
         font-family: 'Cinzel', serif;
     }
-    /* .social {
-        bottom: 30px;
-        width: 90%;
-    } */
     nav {
         position: fixed;
         left: -100%;
