@@ -521,7 +521,7 @@ html {
     width: 15px;
     height: 15px;
     border: 1px solid #383533;
-    top: 27.5%;
+    top: 30%;
     border-radius: 50%;
     left: 12px;
 }
@@ -536,7 +536,7 @@ html {
     width: 15px;
     height: 15px;
     border: 1px solid #383533;
-    top: 30%;
+    top: 35%;
     border-radius: 50%;
     left: 12px;
 }
@@ -731,7 +731,6 @@ select {
         transition: all 0.3s ease-in-out;
         padding: 0px 20px;
         overflow-y: auto;
-        /* Allow vertical scrolling */
         max-height: 100vh;
         min-height: 100vh;
     }
