@@ -21,6 +21,7 @@
     <div class="wrapper-div">
 
         <!-- header -->
+
         <header class="header bottom-line mx-auto py-0 h-30 fixed top-0 w-full bg-white z-50">
             <div class="container mx-auto relative md:py-9 py-5 md:px-0 px-5">
                 <div class="header-nav flex flex-row justify-between items-center relative z-50">
@@ -29,9 +30,10 @@
                             Henna Happens
                         </a>
                     </div>
-                    <a class="menu-btn md:hidden">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </a>
+
+                    <button class="nav-toggle menu-btn border-none outline-none  block md:hidden">
+                        <span class="nav-toggle__text"></span>
+                    </button>
                 </div>
 
                 <!-- Navigation menu -->
@@ -55,7 +57,7 @@
                         <li>
                             <ul class="flex flex-col md:flex-row md:gap-8 gap-14">
                                 <li>
-                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="#Services">
+                                    <a class="nav-item font-2 not-italic font-normal text-3xl md:text-base leading-5 text-gray-800 hover:text-gray-500" href="#services">
                                         services
                                     </a>
                                 </li>
@@ -78,6 +80,7 @@
                     <!-- Social media icons -->
                     <div class="links">
                         <ul class="menu-icon flex justify-between items-center space-x-8 md:hidden">
+
                             <li>
                                 <a href="https://www.yelp.com/">
                                     <i class="fa fa-yelp text-4xl" aria-hidden="true"></i>
@@ -242,47 +245,75 @@
                     <h1 class="who-work font-1 not-italic font-normal text-3xl md:text-6xl text-gray-800">
                         Who I worked with
                     </h1>
-                    <div class="container">
-                        <div class="list-items-worked md:pt-12 pt-3">
-                            <div class="worked-header bg-white cursor-pointer relative flex justify-between items-center py-5" id="worked-header-1">
-                                <h1 class="font-2 md:font-1   text-base md:text-4xl not-italic font-normal text-gray-800 ">
+
+                    <div class="container  mx-auto md:pt-10 pt-5 flex flex-wrap md:block  ">
+                        <div class="worked-item flex flex-col-reverse md:basis-full">
+                            <div class="work-header flex flex-row justify-between items-center md:py-7 py-3 px-0">
+                                <h1 class="title-header font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4">
                                     Nique Miller, Pro Surfer
                                 </h1>
-                                <span class="arrow">
+                                <span class="arrow worked">
                                     <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
-                                  </span>
+                                </span>
                             </div>
-                            <div class="worked-header bg-white cursor-pointer relative flex justify-between items-center py-5" id="worked-header-2">
-                                <h1 class="font-2 md:font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4 ">
+                            <div class="work-desc">
+                                <img src="./assets/images/worked-header-img-1.png" alt="work-img">
+                            </div>
+                        </div>
+
+                        <div class="worked-item flex flex-col-reverse md:basis-full">
+                            <div class="work-header flex flex-row justify-between items-center md:py-7 py-3 px-0">
+                                <h1 class="title-header font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4">
                                     Netflix’s Murder Mystery 2 with Jennifer Aniston & Adam Sandler
                                 </h1>
-                                <span class="arrow">
-                                  <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
+                                <span class="arrow worked">
+                                    <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
                                 </span>
                             </div>
-                            <div class="worked-header bg-white cursor-pointer relative flex justify-between items-center py-5" id="worked-header-3">
-                                <h1 class="font-2 md:font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 ">
+                            <div class="work-desc">
+                                <img src="./assets/images/worked-header-img-2.png" alt="work-img">
+                            </div>
+                        </div>
+
+                        <div class="worked-item flex flex-col-reverse md:basis-full">
+                            <div class="work-header flex flex-row justify-between items-center md:py-7 py-6 px-0">
+                                <h1 class="title-header font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4">
                                     Samson Ebukam, Pro Football Player
                                 </h1>
-                                <span class="arrow">
-                                  <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
+                                <span class="arrow worked">
+                                    <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
                                 </span>
                             </div>
-                            <div class="worked-header bg-white cursor-pointer relative flex justify-between items-center py-5" id="worked-header-4">
-                                <h1 class="font-2 md:font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 ">
+                            <div class="work-desc">
+                                <img src="./assets/images/worked-header-img-3.png" alt="work-img">
+                            </div>
+                        </div>
+
+                        <div class="worked-item flex flex-col-reverse md:basis-full">
+                            <div class="work-header flex flex-row justify-between items-center md:py-7 py-3 px-0">
+                                <h1 class="title-header font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4">
                                     Reno Wilson, Actor
                                 </h1>
-                                <span class="arrow">
-                                  <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
+                                <span class="arrow worked">
+                                    <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
                                 </span>
                             </div>
-                            <div class="worked-header bg-white cursor-pointer relative flex justify-between items-center py-5 " id="worked-header-5">
-                                <h1 class="font-2 md:font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 ">
+                            <div class="work-desc">
+                                <img src="./assets/images/worked-header-img-4.png" alt="work-img">
+                            </div>
+                        </div>
+
+                        <div class="worked-item flex flex-col-reverse md:basis-full">
+                            <div class="work-header flex flex-row justify-between items-center md:py-7 py-3  px-0">
+                                <h1 class="title-header font-1 text-base md:text-4xl  not-italic font-normal text-gray-800 w-3/4">
                                     Alicia Kelly, Pro Surfer
                                 </h1>
-                                <span class="arrow">
-                                  <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
+                                <span class="arrow worked">
+                                    <i class="icon-corner-icon" aria-hidden="true"><a href="#"></a></i>
                                 </span>
+                            </div>
+                            <div class="work-desc">
+                                <img src="./assets/images/worked-header-img-5.png" alt="work-img">
                             </div>
                         </div>
                     </div>

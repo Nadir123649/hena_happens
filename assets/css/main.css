@@ -280,6 +280,37 @@ html {
     background-color: #cdcdcd;
 }
 
+.work-header {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.worked-item {
+    position: relative;
+}
+
+.worked-item .work-desc {
+    position: absolute;
+    opacity: 0;
+    top: -10%;
+    right: 20%;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.worked-item:hover .work-desc {
+    opacity: 1;
+}
+
+.worked-item .work-header img {
+    width: 100%;
+    height: auto;
+}
+
+.worked-item .work-desc img {
+    width: 100%;
+    height: auto;
+}
+
 .tabs::before {
     top: 0;
 }
@@ -526,7 +557,7 @@ html {
     left: 12px;
 }
 
-.circle-after.lg-circled {
+s .circle-after.lg-circled {
     position: relative;
 }
 
@@ -540,9 +571,6 @@ html {
     border-radius: 50%;
     left: 12px;
 }
-
-
-/* hamburger css */
 
 
 /* appoinment request */
@@ -565,69 +593,6 @@ select {
     background-position: right 0.7em top 50%;
     background-size: auto;
     padding-right: 2.5em;
-}
-
-.worked-header {
-    position: relative;
-}
-
-.worked-header:hover::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: calc(-167.5px + 50%);
-    /* set the left value to position the image in the center of the cursor */
-    top: calc(-126px + 50%);
-    /* set the top value to position the image directly below the cursor */
-    width: 335px;
-    height: 172px;
-    background-image: url("../images/worked-header-img-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-    z-index: 1;
-    transform: scale(0);
-    transition: transform 0.5s ease-in-out;
-}
-
-.worked-header:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: calc(-167.5px + 50%);
-    /* set the left value to position the image in the center of the cursor */
-    top: calc(-86px + 50%);
-    /* set the top value to position the image directly below the cursor */
-    width: 335px;
-    height: 172px;
-    background-image: url("../images/worked-header-img-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-    z-index: 1;
-    transform: scale(1);
-    transition: transform 0.5s ease-in-out;
-}
-
-.worked-header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: calc(-167.5px + 50%);
-    /* set the left value to position the image in the center of the cursor */
-    top: calc(-86px + 50%);
-    /* set the top value to position the image directly below the cursor */
-    width: 335px;
-    height: 172px;
-    background-image: url("../images/worked-header-img-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-    z-index: 1;
-    transform: scale(0);
 }
 
 @media screen and (max-width: 768px) {
@@ -807,5 +772,34 @@ select {
     }
     .nav-toggle--active:after {
         transform: translateY(-6px) rotate(225deg);
+    }
+    .worked-item .work-desc {
+        position: relative !important;
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+    .arrow.worked {
+        display: none;
+    }
+    .work-header {
+        border: none;
+    }
+    .worked-item .work-header img {
+        width: auto;
+        height: auto;
+    }
+    .worked-item .work-desc img {
+        width: auto;
+        height: auto;
+    }
+    .worked-item:first-child {
+        flex-basis: 100%;
+    }
+    .worked-item:not(:first-child) {
+        flex-basis: 50%;
+    }
+    .title-header {
+        font-family: 'Montserrat', sans-serif;
     }
 }
