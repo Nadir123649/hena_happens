@@ -96,11 +96,17 @@ accordionItems.forEach(item => {
     });
 });
 
-// header toogel code
-
+// header toggel code 
 
 var menuBtn = document.querySelector('.menu-btn');
 var navMenu = document.querySelector('nav');
 menuBtn.addEventListener('click', function() {
     navMenu.classList.toggle('nav-menu-open');
+});
+
+// hamburger code styling
+
+$('.menu-btn').on('click', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('nav-toggle--active');
 });
