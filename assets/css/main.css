@@ -544,61 +544,6 @@ html {
 
 /* hamburger css */
 
-.nav-toggle.menu-btn {
-    border: none;
-    outline: none;
-}
-
-.nav-toggle {
-    display: block;
-    width: 18px;
-    height: 2px;
-    box-sizing: content-box;
-    background-clip: content-box;
-    transition: background-color 500ms ease-in-out 250ms;
-    background-color: black;
-}
-
-.nav-toggle:hover {
-    cursor: pointer;
-}
-
-.nav-toggle:before,
-.nav-toggle:after {
-    position: relative;
-    content: '';
-    display: block;
-    width: 18px;
-    height: 2px;
-    transition: transform 500ms ease-in-out;
-    background-color: black;
-}
-
-.nav-toggle:before {
-    top: -6px;
-}
-
-.nav-toggle:after {
-    bottom: -4px;
-}
-
-.nav-toggle__text {
-    display: none;
-}
-
-.nav-toggle--active {
-    background-color: rgba(255, 255, 255, 0);
-    transition-delay: -0s;
-}
-
-.nav-toggle--active:before {
-    transform: translateY(6px) rotate(-225deg);
-}
-
-.nav-toggle--active:after {
-    transform: translateY(-6px) rotate(225deg);
-}
-
 
 /* appoinment request */
 
@@ -817,5 +762,50 @@ select {
         top: 24%;
         border-radius: 50%;
         left: 12px;
+    }
+    .nav-toggle.menu-btn {
+        border: none;
+        outline: none;
+    }
+    .nav-toggle {
+        display: block;
+        width: 18px;
+        height: 2px;
+        box-sizing: content-box;
+        background-clip: content-box;
+        transition: background-color 500ms ease-in-out 250ms;
+        background-color: black;
+    }
+    .nav-toggle:hover {
+        cursor: pointer;
+    }
+    .nav-toggle:before,
+    .nav-toggle:after {
+        position: relative;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 2px;
+        transition: transform 500ms ease-in-out;
+        background-color: black;
+    }
+    .nav-toggle:before {
+        top: -6px;
+    }
+    .nav-toggle:after {
+        bottom: -4px;
+    }
+    .nav-toggle__text {
+        display: none;
+    }
+    .nav-toggle--active {
+        background-color: rgba(255, 255, 255, 0);
+        transition-delay: -0s;
+    }
+    .nav-toggle--active:before {
+        transform: translateY(6px) rotate(-225deg);
+    }
+    .nav-toggle--active:after {
+        transform: translateY(-6px) rotate(225deg);
     }
 }
